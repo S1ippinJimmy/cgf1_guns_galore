@@ -11,7 +11,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>70</damageAmountBase>
+			<damageAmountBase>75</damageAmountBase>
 			<speed>105</speed>
 			<explosionRadius>1.1</explosionRadius>
 			<soundExplode>Explosion_Rocket</soundExplode>
