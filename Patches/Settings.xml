@@ -1,0 +1,1178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>[Core] Use preset gun spawns</label>
+		<operations>
+			<!-- Core -->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[@Name="MercenaryGunnerBase" or defName="Villager" or defName="Town_Guard" or defName="Town_Trader" or defName="Town_Councilman" or defName="Scavenger" or defName="Pirate" or defName="AncientSoldier"]/weaponTags/li[text() = "Gun"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="StrangerInBlack"]/weaponTags/li[text() = "Revolver"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[@Name="MercenarySniperBase"]/weaponTags/li[text() = "SniperRifle"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Mercenary_Heavy"]/weaponTags/li[text() = "GunHeavy"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Mercenary_Heavy"]/weaponTags/li[text() = "GunSingleUse"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[@Name="MercenaryEliteTierBase"]/weaponTags/li[text() = "IndustrialGunAdvanced"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Grenadier_Destructive"]/weaponTags/li[text() = "GrenadeDestructive"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Grenadier_EMP"]/weaponTags/li[text() = "GrenadeEMP"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Grenadier_Smoke"]/weaponTags/li[text() = "GrenadeSmoke"]</xpath>
+			</li>
+			
+			<!--
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Villager"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>65~510</weaponMoney>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Town_Trader" or defName="Scavenger"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>200~510</weaponMoney>
+				</value>
+			</li>-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Town_Guard" or defName="Pirate"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>350~575</weaponMoney>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="MercenarySniperBase" or defName="Town_Councilman"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>550~1370</weaponMoney>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[@Name="MercenaryEliteTierBase" or defName="AncientSoldier"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>500~2500</weaponMoney>
+				</value>
+			</li>
+			
+			<!-- Sparkling Worlds -->
+			
+			<!--<li MayRequire="Albion.SparklingWorlds.Full" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SniperBlueSunSW"]/weaponTags/li[text() = "SniperRifle"]</xpath>
+			</li>-->
+		</operations>
+	</Operation>
+	
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>[Core] Ancient Dangers contain arsenals</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingSetMakerDef[defName="MapGen_AncientTempleContents"]</xpath>
+					<value>
+						<ThingSetMakerDef>
+							<defName>MapGen_AncientTempleContents</defName>
+							<root Class="ThingSetMaker_Sum">
+									<options>
+										<!-- Weapons -->
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_Count">
+											<fixedParams>
+											  <qualityGenerator>Trader</qualityGenerator>
+											  <filter>
+												<thingSetMakerTagsToAllow>
+												  <li>CGF1_GunsGalore_RewardAncient_Common</li>
+												</thingSetMakerTagsToAllow>
+											  </filter>
+											  <countRange>5~8</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_Count">
+											<fixedParams>
+											  <qualityGenerator>Trader</qualityGenerator>
+											  <filter>
+												<thingSetMakerTagsToAllow>
+												  <li>CGF1_GunsGalore_RewardAncient_Manned</li>
+												</thingSetMakerTagsToAllow>
+											  </filter>
+											  <countRange>1~4</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_Count">
+											<fixedParams>
+											  <qualityGenerator>Trader</qualityGenerator>
+											  <filter>
+												<thingSetMakerTagsToAllow>
+												  <li>CGF1_GunsGalore_RewardAncient_Heavy</li>
+												</thingSetMakerTagsToAllow>
+											  </filter>
+											  <countRange>1~4</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_Count">
+											<fixedParams>
+											  <qualityGenerator>Super</qualityGenerator>
+											  <maxThingMarketValue>10000</maxThingMarketValue>
+											  <filter>
+												<thingSetMakerTagsToAllow>
+												  <li>CGF1_GunsGalore_RewardAncient_Melee</li>
+												</thingSetMakerTagsToAllow>
+												<disallowCheaperThan>150</disallowCheaperThan>
+											  </filter>
+											  <countRange>1~4</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>	
+										<li>
+										  <chance>100</chance>
+										  <thingSetMaker Class="ThingSetMaker_Count">
+											<fixedParams>
+											  <qualityGenerator>Super</qualityGenerator>
+											  <filter>
+												<thingSetMakerTagsToAllow>
+												  <li>CGF1_GunsGalore_RewardAncient_Prototype</li>
+												</thingSetMakerTagsToAllow>
+											  </filter>
+											  <countRange>1</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<li MayRequire="Ludeon.RimWorld.Odyssey">
+										  <chance>100</chance>
+										  <thingSetMaker Class="ThingSetMaker_Count">
+											<fixedParams>
+											  <qualityGenerator>Super</qualityGenerator>
+											  <filter>
+												<thingSetMakerTagsToAllow>
+												  <li>CGF1_GunsGalore_RewardAncient_Unique</li>
+												</thingSetMakerTagsToAllow>
+											  </filter>
+											  <countRange>1</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										
+										<!-- Supplies -->
+										
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_StackCount">
+											<fixedParams>
+											  <filter>
+												<thingDefs>
+												  <li>MedicineIndustrial</li>
+												</thingDefs>
+											  </filter>
+											  <countRange>4~20</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_StackCount">
+											<fixedParams>
+											  <filter>
+												<thingDefs>
+												  <li>ComponentIndustrial</li>
+												</thingDefs>
+											  </filter>
+											  <countRange>7~35</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_StackCount">
+											<fixedParams>
+											  <filter>
+												<thingDefs>
+												  <li>MealSurvivalPack</li>
+												</thingDefs>
+											  </filter>
+											  <countRange>3~18</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										
+										<!-- Super Reward -->
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_Count">
+											<fixedParams>
+											  <qualityGenerator>Reward</qualityGenerator>
+											  <filter>
+												<thingDefs>
+												  <li>ArchotechEye</li>
+												  <li>ArchotechArm</li>
+												  <li>ArchotechLeg</li>
+												  <li>MechSerumHealer</li>
+												  <li>MechSerumResurrector</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">PsychicHarmonizer</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">PsychicReader</li>
+												  <li MayRequire="Ludeon.RimWorld.Biotech">Mechlink</li>
+												</thingDefs>
+											  </filter>
+											  <countRange>1~2</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<!-- Decent Reward -->
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_Count">
+											<fixedParams>
+											  <qualityGenerator>Super</qualityGenerator>
+											  <filter>
+												<thingDefs>
+												  <li>TechprofSubpersonaCore</li>
+												  <li>BionicArm</li>
+												  <li>BionicEar</li>
+												  <li>BionicEye</li>
+												  <li>BionicHeart</li>
+												  <li>BionicJaw</li>
+												  <li>BionicLeg</li>
+												  <li>BionicSpine</li>
+												  <li>BionicStomach</li>
+												  <li>Joywire</li>
+												  <li>Painstopper</li>
+												  <li>PowerClaw</li>
+												  <li>OrbitalTargeterBombardment</li>
+												  <li>OrbitalTargeterPowerBeam</li>
+												  <li>PsychicEmanator</li>
+												  <li>VanometricPowerCell</li>
+												  <li>InfiniteChemreactor</li>
+												  <li>TextBook</li>
+												  <li>Schematic</li>
+												  <li>Novel</li>
+												  <li>PsychicAnimalPulser</li>
+												  <li>PsychicSoothePulser</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">ArmorskinGland</li>
+												  <!--<li MayRequire="Ludeon.RimWorld.Royalty">CircadianAssistant</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">CircadianHalfCycler</li>-->
+												  <li MayRequire="Ludeon.RimWorld.Royalty">Coagulator</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">DetoxifierStomach</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">HealingEnhancer</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">Immunoenhancer</li>
+												  <!--<li MayRequire="Ludeon.RimWorld.Royalty">LearningAssistant</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">Neurocalculator</li>-->
+												  <li MayRequire="Ludeon.RimWorld.Royalty">NuclearStomach</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">PsychicSensitizer</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">ReprocessorStomach</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">StoneskinGland</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">ToughskinGland</li>
+												  <!--<li MayRequire="Ludeon.RimWorld.Royalty">BroadshieldCore</li>-->
+												  <li MayRequire="Ludeon.RimWorld.Royalty">OrbitalTargeterMechCluster</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">MeleeWeapon_PsyfocusStaff</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">MeleeWeapon_MonoSwordBladelink</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">MeleeWeapon_ZeusHammerBladelink</li>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">MeleeWeapon_PlasmaSwordBladelink</li>
+												  <li MayRequire="Ludeon.RimWorld.Biotech">ArchiteCapsule</li>
+												  <li MayRequire="Ludeon.RimWorld.Biotech">SubcoreHigh</li>
+												  <li MayRequire="Ludeon.RimWorld.Biotech">DetoxifierKidney</li>
+												  <li MayRequire="Ludeon.RimWorld.Biotech">DetoxifierLung</li>
+												  <!--<li MayRequire="Ludeon.RimWorld.Anomaly">Tome</li>-->
+												  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_MeleeWeapon_ToxbladeBladelink</li>
+												  <li MayRequire="OskarPotocki.VFE.Deserters">VFED_Biodecoder</li>
+												  <li MayRequire="OskarPotocki.VFE.Deserters">VFED_PsychicAmplifier</li>
+												  <li MayRequire="OskarPotocki.VFE.Deserters">VFED_Apparel_InvisibilityEngulfer</li>
+												</thingDefs>
+												<thingSetMakerTagsToAllow>
+												  <li>SkillNeurotrainer</li>
+												  <li>NeurotrainersPsycast</li>
+												</thingSetMakerTagsToAllow>
+											  </filter>
+											  <countRange>2~6</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<!-- Apparel -->
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_Count">
+											<fixedParams>
+											  <qualityGenerator>Reward</qualityGenerator>
+											  <filter>
+												<thingDefs>
+												  <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Gunlink</li>
+												  <li MayRequire="VanillaExpanded.VAEAccessories">VAEA_Apparel_AmmoPack</li>
+												  <li MayRequire="VanillaExpanded.VAEAccessories">VAEA_Apparel_MedicBag</li>
+												</thingDefs>
+											  </filter>
+											  <countRange>0~3</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_StackCount">
+											<fixedParams>
+											  <filter>
+												<thingDefs>
+												  <li>Luciferium</li>
+												</thingDefs>
+											  </filter>
+											  <countRange>5~42</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<li>
+										  <chance>0.5</chance>
+										  <thingSetMaker Class="ThingSetMaker_StackCount">
+											<fixedParams>
+											  <filter>
+												<thingDefs>
+												  <li>MedicineUltratech</li>
+												</thingDefs>
+											  </filter>
+											  <countRange>4~20</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										<li MayRequire="OskarPotocki.VFE.Mechanoid">
+										  <chance>0.25</chance>
+										  <thingSetMaker Class="ThingSetMaker_StackCount">
+											<fixedParams>
+											  <filter>
+												<thingDefs>
+												  <li>VFE_ComponentMechanoid</li>
+												</thingDefs>
+											  </filter>
+											  <countRange>8~45</countRange>
+											</fixedParams>
+										  </thingSetMaker>
+										</li>
+										
+										<!-- Corpses -->
+										
+										<li>
+										  <chance>1</chance>
+										  <thingSetMaker Class="ThingSetMaker_Pawn">
+											<pawnKind>CGF1_MWP_AncientSoldier</pawnKind>
+											<alive>false</alive>
+											<corpseAgeRangeDays>200~300</corpseAgeRangeDays>
+										  </thingSetMaker>
+										</li>
+										<li>
+										  <chance>0.5</chance>
+										  <thingSetMaker Class="ThingSetMaker_Pawn">
+											<pawnKind>CGF1_MWP_AncientSoldier</pawnKind>
+											<alive>false</alive>
+											<corpseAgeRangeDays>200~300</corpseAgeRangeDays>
+										  </thingSetMaker>
+										</li>
+										<li>
+										  <chance>0.25</chance>
+										  <thingSetMaker Class="ThingSetMaker_Pawn">
+											<pawnKind>CGF1_MWP_AncientSoldier</pawnKind>
+											<alive>false</alive>
+											<corpseAgeRangeDays>200~300</corpseAgeRangeDays>
+										  </thingSetMaker>
+										</li>
+								</options>
+							</root>
+						</ThingSetMakerDef>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>[Core] Use preset melee spawns</label>
+		<operations>
+			<!-- Core -->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Drifter" or defName="Thrasher" or defName="Tribal_Penitent"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Warrior"]/weaponTags/li[text() = "NeolithicMeleeDecent"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Berserker" or defName="Tribal_ChiefMelee"]/weaponTags/li[text() = "NeolithicMeleeAdvanced"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Villager" or defName="Drifter" or defName="Thrasher"]/weaponTags/li[text() = "MedievalMeleeBasic"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Mercenary_Slasher" or defName="Thrasher"]/weaponTags/li[text() = "MedievalMeleeDecent"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Mercenary_Slasher" or defName="Tribal_ChiefMelee"]/weaponTags/li[text() = "MedievalMeleeAdvanced"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Thrasher"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>100~400</weaponMoney>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>[Core] Use preset misc ranged (bow, javelin, etc.) spawns</label>
+		<operations>
+			<!-- Core -->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Archer"]/weaponTags/li[text() = "NeolithicRangedBasic"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Hunter"]/weaponTags/li[text() = "NeolithicRangedDecent"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_HeavyArcher"]/weaponTags/li[text() = "NeolithicRangedHeavy"]</xpath>
+			</li>
+			<!--<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_ChiefRanged"]/weaponTags/li[text() = "NeolithicRangedChief"]</xpath>
+			</li>-->
+			
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>[Core] Tribals can use muskets</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_HeavyArcher" or defName="Tribal_ChiefRanged"]/weaponTags</xpath>
+				<value>
+					<li>CGF1_Rifle_Musket</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>[Core] Mechanoids can use heavy industrial guns</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mech_CentipedeGunner"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Mech_CentipedeGunner</li>
+						<!--<li>MechanoidGunMedium</li>-->
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mech_CentipedeBlaster"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Mech_CentipedeBlaster</li>
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mech_CentipedeBurner"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Mech_CentipedeBurner</li>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mech_Lancer"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Mech_Lancer</li>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mech_Pikeman"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Mech_Pikeman</li>
+					</value>
+			</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mech_Militor"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Mech_Militor</li>
+					</value>
+			</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mech_Legionary"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Mech_Legionary</li>
+					</value>
+			</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mech_Scorcher"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Mech_Scorcher</li>
+					</value>
+			</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mech_Apocriton"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Mech_Apocriton</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<label>[Royalty] Use preset gun spawns</label>
+		<operations>
+		
+			<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Empire_Common_Trader"]/weaponTags/li[text() = "SimpleGun"]</xpath>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[@Name="ImperialTrooperBase" or @Name="JanissaryBase"]/weaponTags/li[text() = "IndustrialGunAdvanced"]</xpath>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[@Name="JanissaryBase"]/weaponTags/li[text() = "SniperRifle"]</xpath>
+			</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/weaponTags/li[text() = "EmpireGrenadeDestructive"]</xpath>
+					<match Class="PatchOperationRemove">
+						<xpath>Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/weaponTags/li[text() = "EmpireGrenadeDestructive"]</xpath>
+					</match>
+			</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Royalty" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags/li[text() = "GunHeavy"]</xpath>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<label>[Royalty] Use preset melee spawns</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Refugee"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Refugee"]/weaponTags/li[text() = "MedievalMeleeBasic"]</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/weaponTags/li[text() = "MedievalMeleeDecent"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/weaponTags/li[text() = "MedievalMeleeAdvanced"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<label>[Royalty] Use preset Ultratech ranged spawns</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged" or @Name="JanissaryBase"]/weaponTags/li[text() = "SpacerGun"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<label>[Royalty] Use preset Ultratech melee spawns</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Champion" or @Name="RoyalBase"]/weaponTags/li[text() = "UltratechMelee"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee" or @Name="RoyalBase"]/weaponTags/li[text() = "Bladelink"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<label>[Ideology] Use preset gun spawns</label>
+		<operations>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Miner" or defName="Hunter" or defName="Logger" or defName="Farmer"]/weaponTags/li[text() = "Gun"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="WellEquippedTraveler"]/weaponTags/li[text() = "IndustrialGunAdvanced"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="Hunter"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>220~240</weaponMoney>
+				</value>
+			</li>	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="WellEquippedTraveler"]/weaponMoney</xpath>
+				<value>
+					<weaponMoney>500~2500</weaponMoney>
+				</value>
+			</li>	
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<label>[Ideology] Use preset misc ranged (bow, javelin, etc.) spawns</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Miner" or defName="Tribal_Logger" or defName="Tribal_Farmer"]/weaponTags/li[text() = "NeolithicRangedBasic"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<label>[Ideology] Use preset melee spawns</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Miner" or defName="Tribal_Logger" or defName="Tribal_Farmer" or defName="Beggar" or defName="PovertyPilgrim"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Miner" or defName="Logger" or defName="Farmer" or defName="Beggar" or defName="PovertyPilgrim"]/weaponTags/li[text() = "MedievalMeleeBasic"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<label>[Biotech] Use preset gun spawns</label>
+		<operations>
+		
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Town_Trader_Pig" or defName="Sanguophage"]/weaponTags/li[text() = "Gun"]</xpath>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Villager_Pig" or defName="Town_Guard_Pig" or defName="Town_Councilman_Pig" or defName="Mercenary_Gunner_Pig" or defName="Mercenary_Elite_Pig"]/weaponTags/li[text() = "ShortShots"]</xpath>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Mechanitor"]/weaponTags/li[text() = "Autopistol"]</xpath>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="SanguophageThrall"]/weaponTags/li[text() = "IndustrialGunAdvanced"]</xpath>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Warrior_Fire" or defName="Tribal_Penitent_Fire"]/weaponTags/li[text() = "GrenadeFlame"]</xpath>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<label>[Biotech] Use preset misc ranged (bow, javelin, etc.) spawns</label>
+		<operations>
+			
+			<!-- Biotech -->
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Archer_Fire" or defName="Tribal_Hunter_Fire"]/weaponTags/li[text() = "NeolithicRangedFlame"]</xpath>
+			</li>
+
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Grenadier_Tox"]/weaponTags/li[text() = "GrenadeTox"]</xpath>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<label>[Biotech] Use preset melee spawns</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Penitent_Fire"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Tribal_Warrior_Fire"]/weaponTags/li[text() = "NeolithicMeleeDecent"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Villager_Pig" or defName="Town_Guard_Pig" or defName="Town_Councilman_Pig"]/weaponTags/li[text() = "MedievalMeleeBasic"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Sanguophage" or defName="SanguophageThrall"]/weaponTags/li[text() = "MedievalMeleeDecent"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<label>[Anomaly] Use preset gun spawns</label>
+		<operations>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Horaxian_Gunner"]/weaponTags/li[text() = "SimpleGun"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Horaxian_Gunner"]/weaponTags/li[text() = "ShortShots"]</xpath>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<label>[Anomaly] Use preset melee spawns</label>
+		<operations>
+		
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Horaxian_Underthrall"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Horaxian_Underthrall"]/weaponTags/li[text() = "MedievalMeleeDecent"]</xpath>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+		<label>[Vanilla Expanded] Use preset gun spawns</label>
+		<operations>
+			<!-- VFE - Ancients -->
+			
+			<li MayRequire="VanillaExpanded.VFEA" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEA_PlayerAncientSoldierOneAbility" or defName="VFEA_AncientSoldierOneAbility" or defName="VFEA_AncientSoldierTwoAbilities"]/weaponTags/li[text() = "Gun"]</xpath>
+			</li>
+			
+			<!-- VFE - Pirates -->
+			
+			<li MayRequire="OskarPotocki.VFE.Pirates" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEP_Scrapper" or defName="VFEP_Private" or defName="VFEP_Corporal"]/weaponTags/li[text() = "Gun"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Pirates" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEP_Sergeant"]/weaponTags/li[text() = "VFEP_Sergeant"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Pirates" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEP_Captain"]/weaponTags/li[text() = "VFEP_Captain"]</xpath>
+			</li>
+			
+			<!-- VFE - Settlers -->
+			
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="Bandit" or defName="Outlaw" or defName="Settler" or defName="Deputy" or defName="Militia" or defName="Frontier_Trader"]/weaponTags/li[text() = "SimpleGun"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="BountyHunter" or defName="Gunslinger" or defName="Deputy" or defName="Frontier_Trader"]/weaponTags/li[text() = "Gun"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="BountyHunter" or defName="Gunslinger" or defName="BanditLeader" or defName="Deputy" or defName="Sheriff" or defName="Mayor"]/weaponTags/li[text() = "Revolver"]</xpath>
+			</li>
+			
+			<!-- VRE - Saurids -->
+			
+			<li MayRequire="vanillaracesexpanded.saurid" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VRESaurids_TownTrader_Saurid"]/weaponTags/li[text() = "Gun"]</xpath>
+			</li>
+			
+			<li MayRequire="vanillaracesexpanded.saurid" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VRESaurids_Villager_Saurid" or defName="VRESaurids_TownGuard_Saurid" or defName="VRESaurids_TownCouncilman_Saurid" or defName="VRESaurids_MercenaryGunner_Saurid" or defName="VRESaurids_MercenaryElite_Saurid"]/weaponTags/li[text() = "ShortShots"]</xpath>
+			</li>
+			
+			<!-- VFE - Empire -->
+			
+			<li MayRequire="OskarPotocki.VFE.Empire" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEE_Deserter"]/weaponTags/li[text() = "AssaultRifle"]</xpath>
+			</li>
+			
+			<!-- VFE - Medieval 2 -->
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Archer" or defName="VFEM2_Hunter"]/weaponTags/li[text() = "NeolithicRangedBasic"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Hunter" or defName="VFEM2_Bowman"]/weaponTags/li[text() = "NeolithicRangedDecent"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/weaponTags/li[text() = "NeolithicRangedHeavy"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/weaponTags/li[text() = "VikingRangedBasic"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Guildmaster"]/weaponTags/li[text() = "MedievalRangedHeavy"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_HeavyArcher" or defName="VFEM2_HeavyBowman"]/weaponTags/li[text() = "VFEM2_Warbow"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Crossbowman"]/weaponTags/li[text() = "VFEM2_Arbalest"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Handgunner"]/weaponTags/li[text() = "VFEM2_MedievalRangedChempowder"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+		<label>[Vanilla Expanded] Use preset melee spawns</label>
+		<operations>
+			<!-- VFE - Medieval 2 -->
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Peasant" or defName="VFEM2_Clan_Peasant" or defName="VFEM2_Jarl"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Wallbreaker" or defName="VFEM2_SiegeRaider"]/weaponTags/li[text() = "NeolithicMeleeDestructive"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Raider" or defName="VFEM2_Berserker"]/weaponTags/li[text() = "VikingMeleeAdvanced"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Peasant" or defName="VFEM2_Militia" or defName="VFEM2_Clan_Peasant" or defName="VFEM2_Thrall" or defName="VFEM2_TorchThrower"]/weaponTags/li[text() = "MedievalMeleeBasic"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Trader" or defName="VFEM2_Guildmaster" or defName="VFEM2_ManAtArms" or defName="VFEM2_Knight" or defName="VFEM2_Lord" or defName="VFEM2_Raider"]/weaponTags/li[text() = "MedievalMeleeDecent"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Trader" or defName="VFEM2_Guildmaster" or defName="VFEM2_ManAtArms" or defName="VFEM2_Knight" or defName="VFEM2_Lord" or defName="VFEM2_Raider" or defName="VFEM2_Jarl"]/weaponTags/li[text() = "MedievalMeleeAdvanced"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Peasant" or defName="VFEM2_Militia" or defName="VFEM2_Clan_Peasant" or defName="VFEM2_Thrall" or defName="VFEM2_TorchThrower" or defName="VFEM2_Jarl"]/weaponTags/li[text() = "Spear"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Halberdier"]/weaponTags/li[text() = "VFEM2_Halberd"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Greatsword"]/weaponTags/li[text() = "VFEM2_Claymore"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Medieval2" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM2_Spearman" or defName="VFEM2_Merchant"]/weaponTags/li[text() = "VFEM2_Pike"]</xpath>
+			</li>
+		
+			<!-- VFE - Medieval -->
+			
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM_Medieval_Peasant" or defName="VFEM_Medieval_Merchant" or defName="VFEM_Medieval_Jester" or defName="VFEM_Medieval_Dame"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM_Medieval_Footsoldier" or defName="VFEM_Medieval_Knight" or defName="VFEM_SellSword"]/weaponTags/li[text() = "MedievalMeleeDecent"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEM_Medieval_Knight" or defName="VFEM_SellSword"]/weaponTags/li[text() = "MedievalMeleeAdvanced"]</xpath>
+			</li>
+			
+			<!-- VFE - Vikings -->
+			
+			<li MayRequire="OskarPotocki.VFE.Vikings" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEV_Viking_Peasant" or defName="VFEV_Viking_Slaver"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Vikings" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEV_Viking_Merchant" or defName="VFEV_Raider" or defName="VFEV_Guardian" or defName="VFEV_Berserker" or defName="VFEV_Shieldbearer" or defName="VFEV_ShieldedGuardian" or defName="VFEV_ShieldedRavager"]/weaponTags/li[text() = "VikingMeleeBasic"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Vikings" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEV_Raider" or defName="VFEV_Guardian" or defName="VFEV_Ravager" or defName="VFEV_Berserker" or defName="VFEV_Shieldbearer" or defName="VFEV_ShieldedGuardian" or defName="VFEV_ShieldedRavager" or defName="VFEV_HousecarlMelee"]/weaponTags/li[text() = "VikingMeleeDecent"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Vikings" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEV_Raider" or defName="VFEV_Guardian" or defName="VFEV_Ravager" or defName="VFEV_Berserker" or defName="VFEV_HousecarlMelee"]/weaponTags/li[text() = "VikingMeleeAdvanced"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Vikings" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEV_Raider" or defName="VFEV_Shieldbearer" or defName="VFEV_ShieldedGuardian" or defName="VFEV_ShieldedRavager"]/weaponTags/li[text() = "MedievalMeleeDecent"]</xpath>
+			</li>
+			
+			<li MayRequire="OskarPotocki.VFE.Vikings" Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="VFEV_HousecarlMelee"]/weaponTags/li[text() = "MedievalMeleeAdvanced"]</xpath>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>[GG X - Run'N'Gunners]: Disable partially fictional guns</label>
+		<mods>
+			<li>Guns Galore X - Run'N'Gunners</li>
+		</mods>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/PawnKindDef[defName="CGF1_MWP_RunNGunners_Guard" or defName="CGF1_MWP_RunNGunners_Trader" or defName="CGF1_MWP_RunNGunners_Leader"]/weaponTags/li[text() = "CGF1_MWP_RNG_MercenaryGun"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="CGF1_MWP_RunNGunners_Guard"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_Shotgun_Military_Advanced</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+					</value>
+			</li>
+			<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="CGF1_MWP_RunNGunners_Trader" or defName="CGF1_MWP_RunNGunners_Leader"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_SMG_Military_Advanced</li>
+					</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<!--
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>[Core] Ancient Dangers contain arsenals</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingSetMakerDef[defName="MapGen_AncientTempleContents"]/root/options</xpath>
+					<order>Prepend</order>
+					<value>
+						
+						<li>
+						  <chance>1</chance>
+						  <thingSetMaker Class="ThingSetMaker_Count">
+							<fixedParams>
+							  <qualityGenerator>Trader</qualityGenerator>
+							  <filter>
+								<thingSetMakerTagsToAllow>
+								  <li>CGF1_GunsGalore_RewardAncient_Common</li>
+								</thingSetMakerTagsToAllow>
+							  </filter>
+							  <countRange>5~8</countRange>
+							</fixedParams>
+						  </thingSetMaker>
+						</li>
+						<li>
+						  <chance>1</chance>
+						  <thingSetMaker Class="ThingSetMaker_Count">
+							<fixedParams>
+							  <qualityGenerator>Trader</qualityGenerator>
+							  <filter>
+								<thingSetMakerTagsToAllow>
+								  <li>CGF1_GunsGalore_RewardAncient_Manned</li>
+								</thingSetMakerTagsToAllow>
+							  </filter>
+							  <countRange>1~4</countRange>
+							</fixedParams>
+						  </thingSetMaker>
+						</li>
+						<li>
+						  <chance>1</chance>
+						  <thingSetMaker Class="ThingSetMaker_Count">
+							<fixedParams>
+							  <qualityGenerator>Trader</qualityGenerator>
+							  <filter>
+								<thingSetMakerTagsToAllow>
+								  <li>CGF1_GunsGalore_RewardAncient_Heavy</li>
+								</thingSetMakerTagsToAllow>
+							  </filter>
+							  <countRange>1~4</countRange>
+							</fixedParams>
+						  </thingSetMaker>
+						</li>
+						<li>
+						  <chance>1</chance>
+						  <thingSetMaker Class="ThingSetMaker_Count">
+							<fixedParams>
+							  <qualityGenerator>Super</qualityGenerator>
+							  <maxThingMarketValue>10000</maxThingMarketValue>
+							  <filter>
+								<thingSetMakerTagsToAllow>
+								  <li>CGF1_GunsGalore_RewardAncient_Melee</li>
+								</thingSetMakerTagsToAllow>
+								<disallowCheaperThan>150</disallowCheaperThan>
+							  </filter>
+							  <countRange>1~4</countRange>
+							</fixedParams>
+						  </thingSetMaker>
+						</li>
+						
+						<li>
+						  <chance>100</chance>
+						  <thingSetMaker Class="ThingSetMaker_Count">
+							<fixedParams>
+							  <qualityGenerator>Super</qualityGenerator>
+							  <filter>
+								<thingSetMakerTagsToAllow>
+								  <li>CGF1_GunsGalore_RewardAncient_Prototype</li>
+								</thingSetMakerTagsToAllow>
+							  </filter>
+							  <countRange>1</countRange>
+							</fixedParams>
+						  </thingSetMaker>
+						</li>
+						
+						<li>
+						  <chance>1</chance>
+						  <thingSetMaker Class="ThingSetMaker_StackCount">
+							<fixedParams>
+							  <filter>
+								<thingDefs>
+								  <li>MedicineIndustrial</li>
+								</thingDefs>
+							  </filter>
+							  <countRange>4~20</countRange>
+							</fixedParams>
+						  </thingSetMaker>
+						</li>
+						<li>
+						  <chance>0.25</chance>
+						  <thingSetMaker Class="ThingSetMaker_StackCount">
+							<fixedParams>
+							  <filter>
+								<thingDefs>
+								  <li>ComponentIndustrial</li>
+								</thingDefs>
+							  </filter>
+							  <countRange>7~35</countRange>
+							</fixedParams>
+						  </thingSetMaker>
+						</li>
+						<li>
+						  <chance>0.1</chance>
+						  <thingSetMaker Class="ThingSetMaker_StackCount">
+							<fixedParams>
+							  <filter>
+								<thingDefs>
+								  <li>MedicineUltratech</li>
+								</thingDefs>
+							  </filter>
+							  <countRange>4~20</countRange>
+							</fixedParams>
+						  </thingSetMaker>
+						</li>
+						<li>
+						  <chance>1</chance>
+						  <thingSetMaker Class="ThingSetMaker_StackCount">
+							<fixedParams>
+							  <filter>
+								<thingDefs>
+								  <li>MealSurvivalPack</li>
+								</thingDefs>
+							  </filter>
+							  <countRange>3~18</countRange>
+							</fixedParams>
+						  </thingSetMaker>
+						</li>
+						
+						
+						<li>
+						  <chance>1</chance>
+						  <thingSetMaker Class="ThingSetMaker_Pawn">
+							<pawnKind>AncientSoldier</pawnKind>
+							<alive>false</alive>
+							<corpseAgeRangeDays>200~300</corpseAgeRangeDays>
+						  </thingSetMaker>
+						</li>
+						<li>
+						  <chance>0.5</chance>
+						  <thingSetMaker Class="ThingSetMaker_Pawn">
+							<pawnKind>AncientSoldier</pawnKind>
+							<alive>false</alive>
+							<corpseAgeRangeDays>200~300</corpseAgeRangeDays>
+						  </thingSetMaker>
+						</li>
+						<li>
+						  <chance>0.25</chance>
+						  <thingSetMaker Class="ThingSetMaker_Pawn">
+							<pawnKind>AncientSoldier</pawnKind>
+							<alive>false</alive>
+							<corpseAgeRangeDays>200~300</corpseAgeRangeDays>
+						  </thingSetMaker>
+						</li>
+						
+					</value>
+				</li>
+		</operations>
+	</Operation>
+	-->
+</Patch>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CGF1_MWP_Hediff_CSGas.label>CSガス</CGF1_MWP_Hediff_CSGas.label>
+  <CGF1_MWP_Hediff_CSGas.description>CSガスにより目・鼻・皮膚に強い刺激を受けます。</CGF1_MWP_Hediff_CSGas.description>
+  <CGF1_MWP_Hediff_CSGas.stages.0.label>回復中</CGF1_MWP_Hediff_CSGas.stages.0.label>
+  <CGF1_MWP_Hediff_CSGas.stages.1.label>影響あり</CGF1_MWP_Hediff_CSGas.stages.1.label>
+  <CGF1_MWP_Hediff_CSGas.stages.2.label>失明</CGF1_MWP_Hediff_CSGas.stages.2.label>
+
+</LanguageData>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Settlers</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Settlers -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Settler"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFES_Settler</li>
+						
+						<li>CGF1_Grenade_Old</li>
+						<li>CGF1_Pistol_Musket</li>
+						<li>CGF1_Pistol_Old</li>
+						<li>CGF1_Revolver_Old</li>
+						<li>CGF1_Rifle_Musket</li>
+						<li>CGF1_Rifle_Old</li>
+						<li>CGF1_Shotgun_Old</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Frontier_Trader" or defName="Mayor"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFES_Mayor</li>
+						
+						<li>CGF1_Pistol_Musket</li>
+						<li>CGF1_Pistol_Old</li>
+						<li>CGF1_Revolver_Old</li>
+					</value>
+				</li>						
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Militia"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFES_Militia</li>
+						
+						<li>CGF1_AR_Old</li>
+						<li>CGF1_Rifle_Musket</li>
+						<li>CGF1_Rifle_Old</li>
+						<li>CGF1_Shotgun_Old</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Deputy"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFES_Deputy</li>
+						
+						<li>CGF1_Revolver_Old</li>
+						<li>CGF1_Rifle_Old</li>
+						<li>CGF1_Shotgun_Old</li>
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Sheriff"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFES_Sheriff</li>
+						
+						<li>CGF1_Revolver_Old</li>
+					</value>
+				</li>
+				
+				<!-- Bandits -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Bandit" or defName="Outlaw"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFES_Bandit</li>
+						
+						<li>CGF1_Grenade_Old</li>
+						<li>CGF1_Pistol_Musket</li>
+						<li>CGF1_Pistol_Old</li>
+						<li>CGF1_Revolver_Old</li>
+						<li>CGF1_Rifle_Old</li>
+						<li>CGF1_Shotgun_Old</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="BountyHunter"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFES_BountyHunter</li>
+						
+						<li>CGF1_Revolver_Old</li>
+						<li>CGF1_Rifle_Old</li>
+						<li>CGF1_SniperRifle_Old</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Gunslinger"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFES_Gunslinger</li>
+						
+						<li>CGF1_Revolver_Old</li>
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="BanditLeader"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFES_BanditLeader</li>
+						
+						<li>CGF1_AR_Old</li>
+						<li>CGF1_Pistol_Old</li>
+						<li>CGF1_Revolver_Old</li>
+						<li>CGF1_Rifle_Old</li>
+						<li>CGF1_Shotgun_Old</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

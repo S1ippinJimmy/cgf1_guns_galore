@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval 2</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Clan -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Clan_Peasant"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_Peasant</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Thrall"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_Thrall</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_TorchThrower"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_TorchThrower</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Bowman"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_Bowman</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_Skirmisher</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/weaponMoney</xpath>
+					<value>
+						<li>108~190</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Raider"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_Raider</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Spearman"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_Spearman</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_SiegeRaider"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_SiegeRaider</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_HeavyBowman"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_HeavyBowman</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Berserker"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_Berserker</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Merchant"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_Merchant</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Jarl"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Clan_Jarl</li>
+					</value>
+				</li>
+				
+				<!-- Kingdom -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Peasant"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Peasant</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Militia"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Militia</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Archer"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Archer</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Archer"]/weaponMoney</xpath>
+					<value>
+						<li>90~150</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Hunter"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Hunter</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Trader"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Trader</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Guildmaster"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Guildmaster</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_HeavyArcher"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_HeavyArcher</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Crossbowman"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Crossbowman</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Halberdier"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Halberdier</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_ManAtArms"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_ManAtArms</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Wallbreaker"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Wallbreaker</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Knight"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Knight</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Greatsword"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Greatsword</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Handgunner"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Handgunner</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM2_Lord"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_VFEM2_Lord</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

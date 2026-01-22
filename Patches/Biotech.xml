@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- Mechanitor -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mechanitor"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Biotech_Mechanitor</li>
+						
+						<li>CGF1_Pistol_Military_Advanced</li>
+						<li>CGF1_Pistol_Military_SpecOps</li>
+					</value>
+				</li>
+				<!-- Sanguophage -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Sanguophage"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Biotech_Sanguophage</li>
+						
+						<li>CGF1_Pistol_Civilian</li>
+						<li>CGF1_Pistol_Military</li>
+						<li>CGF1_Revolver_Civilian</li>
+						<li>CGF1_Revolver_Military</li>
+						<li>CGF1_Crossbow_Antiquity</li>
+						<li>CGF1_Crossbow_Medieval</li>
+						<li>CGF1_Crossbow_Renaissance</li>
+						
+						<li>CGF1_Knife_Antiquity</li>
+						<li>CGF1_Knife_Viking</li>
+						<li>CGF1_Knife_Medieval</li>
+						<li>CGF1_Knife_Japanese</li>
+						<li>CGF1_Knife_Renaissance</li>
+						<li>CGF1_Sword_Antiquity</li>
+						<li>CGF1_Sword_Egyptian</li>
+						<li>CGF1_Sword_Viking</li>
+						<li>CGF1_Sword_Medieval</li>
+						<li>CGF1_Sword_Japanese</li>
+						<li>CGF1_Sword_Chinese</li>
+						<li>CGF1_Sword_Arabian</li>
+						<li>CGF1_Sword_Hindi</li>
+						<li>CGF1_Sword_Renaissance</li>
+						<li>CGF1_Staff_Medieval</li>
+						<li>CGF1_Whip_Medieval</li>
+						<li>CGF1_Special_Weeb</li>
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="SanguophageThrall"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Biotech_SanguophageThrall</li>
+						
+						<li>CGF1_AR_Military</li>
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_AR_Military_SpecOps</li>
+						<li>CGF1_LMG_Military</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_LMG_Military_SpecOps</li>
+						<li>CGF1_Pistol_Military_Advanced</li>
+						<li>CGF1_Pistol_Military_SpecOps</li>
+						<li>CGF1_Rifle_Marksman</li>
+						<li>CGF1_Rifle_Marksman_Advanced</li>
+						<li>CGF1_Rifle_Marksman_SpecOps</li>
+						<li>CGF1_Rifle_Military</li>
+						<li>CGF1_Rifle_Military_Advanced</li>
+						<li>CGF1_Rifle_Military_SpecOps</li>
+						<li>CGF1_Shotgun_Military</li>
+						<li>CGF1_Shotgun_Military_Advanced</li>
+						<li>CGF1_SMG_Military</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+						<li>CGF1_SMG_Military_SpecOps</li>
+						<li>CGF1_SniperRifle_Advanced</li>
+						<li>CGF1_SniperRifle_SpecOps</li>
+						<li>CGF1_Crossbow_Antiquity</li>
+						<li>CGF1_Crossbow_Medieval</li>
+						<li>CGF1_Crossbow_Renaissance</li>
+						<li>CGF1_Crossbow_Modern</li>
+						
+						<li>CGF1_Sword_Modern</li>
+						<li>CGF1_Axe_Modern</li>
+						<li>CGF1_Staff_Modern</li>
+						<li>CGF1_Whip_Medieval</li>
+						<li>CGF1_Whip_Modern</li>
+					</value>
+				</li>
+				
+				<!-- Impid -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Tribal_Archer_Fire"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Impid_Archer</li>
+						
+						<li>CGF1_Grenade_Incendiary_Medieval</li>
+						<!--<li>CGF1_Bow_Neolithic_Light</li>
+						<li>CGF1_Bow_Neolithic_Heavy</li>-->
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Tribal_Hunter_Fire"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Impid_Hunter</li>
+						
+						<li>CGF1_Grenade_Incendiary_Medieval</li>
+						<!--<li>CGF1_Bow_Neolithic_Light</li>
+						<li>CGF1_Bow_Neolithic_Heavy</li>-->
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Tribal_Penitent_Fire"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Impid_Penitent</li>
+						
+						<li>CGF1_Grenade_Incendiary_Medieval</li>
+						<li>CGF1_Knife_Neolithic</li>
+						<li>CGF1_Spear_Neolithic</li>
+						<li>CGF1_Axe_Neolithic</li>
+						<li>CGF1_Staff_Neolithic</li>
+						<li>CGF1_ToolWeapon_Neolithic</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Tribal_Warrior_Fire"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Impid_Warrior</li>
+						
+						<li>CGF1_Grenade_Incendiary_Medieval</li>
+						<li>CGF1_Sword_Neolithic</li>
+						<li>CGF1_Spear_Neolithic</li>
+						<li>CGF1_Axe_Neolithic</li>
+					</value>
+				</li>
+				
+				<!-- Tox Grenadier -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Grenadier_Tox" or defName="Mercenary_HeavyTox"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Waster_GrenadierTox</li>
+					
+						<li>CGF1_Grenade_Tox</li>
+					</value>
+				</li>	
+				
+				<!-- Pigskin -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Villager_Pig" or defName="Town_Guard_Pig" or defName="Town_Trader_Pig"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Pigskin_Villager</li>
+					
+						<li>CGF1_Pistol_Improvised</li>
+						<li>CGF1_Pistol_Old</li>
+						<li>CGF1_Revolver_Old</li>
+						<li>CGF1_Shotgun_Improvised</li>
+						
+						<li>CGF1_Knife_Medieval</li>
+						<li>CGF1_Axe_Medieval</li>
+						<li>CGF1_Hammer_Medieval</li>
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Town_Councilman_Pig"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Pigskin_Councilman</li>
+						
+						<li>CGF1_Pistol_Old</li>
+						<li>CGF1_Revolver_Old</li>
+						
+						<li>CGF1_Knife_Medieval</li>
+						<li>CGF1_Axe_Medieval</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mercenary_Gunner_Pig"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Pigskin_Mercenary</li>
+					
+						<li>CGF1_Pistol_Civilian</li>
+						<li>CGF1_Revolver_Civilian</li>
+						<li>CGF1_Shotgun_Civilian</li>
+						<li>CGF1_Shotgun_Military</li>
+						<li>CGF1_SMG_Civilian</li>
+						<li>CGF1_SMG_Improvised</li>
+						<li>CGF1_SMG_Military</li>
+					</value>
+				</li>			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Mercenary_Elite_Pig"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Pigskin_MercenaryElite</li>
+						
+						<li>CGF1_Revolver_Military_Advanced</li>
+						<li>CGF1_Pistol_Military_Advanced</li>
+						<li>CGF1_Shotgun_Military</li>
+						<li>CGF1_Shotgun_Military_Advanced</li>
+						<li>CGF1_SMG_Military</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+						<li>CGF1_SMG_Military_SpecOps</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Empire -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Empire_Common_Trader"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Imperial_Trader</li>
+						
+						<li>CGF1_Pistol_Military_Advanced</li>
+						<li>CGF1_Revolver_Military_Advanced</li>
+					</value>
+				</li>			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[@Name="ImperialTrooperBase"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Imperial_Trooper</li>
+						
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_Rifle_Marksman_Advanced</li>
+						<li>CGF1_Rifle_Military_Advanced</li>
+						<li>CGF1_Shotgun_Military_Advanced</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Grenadier"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Imperial_Grenadier</li>
+						
+						<li>CGF1_GL_Military_Advanced</li>
+						<li>CGF1_Launcher_Military_Advanced</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Imperial_Champion</li>
+						
+						<li>CGF1_Sword_Antiquity</li>
+						<li>CGF1_Sword_Medieval</li>
+						<li>CGF1_Spear_Antiquity</li>
+						<li>CGF1_Spear_Medieval</li>
+						<li>CGF1_Staff_Medieval</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[@Name="JanissaryBase"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Imperial_Janissary</li>
+						
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_GL_Military_Advanced</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_Rifle_Marksman_Advanced</li>
+						<li>CGF1_SniperRifle_Advanced</li>
+						<li>CGF1_Shotgun_Military_Assault</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Imperial_Cataphract</li>
+						
+						<li>CGF1_HMG_Military_Advanced</li>
+					</value>
+				</li>
+				<!--<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
+					<value>
+						<li></li>
+					</value>
+				</li>-->
+				
+				<!-- Refugee -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Refugee"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Royalty_Refugee</li>
+						
+						<li>CGF1_AR_Civilian</li>
+						<li>CGF1_Pistol_Civilian</li>
+						<li>CGF1_Pistol_Improvised</li>
+						<li>CGF1_Pistol_Musket</li>
+						<li>CGF1_Revolver_Civilian</li>
+						<li>CGF1_Rifle_Civilian</li>
+						<li>CGF1_Rifle_Improvised</li>
+						<li>CGF1_Rifle_Musket</li>
+						<li>CGF1_Shotgun_Civilian</li>
+						<li>CGF1_Shotgun_Improvised</li>
+						<li>CGF1_Bow_Neolithic_Light</li>
+						<li>CGF1_Bow_Neolithic_Heavy</li>
+						<li>CGF1_Bow_Antiquity</li>
+						<li>CGF1_Bow_Medieval</li>
+						<li>CGF1_Bow_Modern</li>
+						
+						<li>CGF1_Knife_Modern</li>
+						<li>CGF1_ImprovisedWeapon_Modern_Crude</li>
+						<li>CGF1_ImprovisedWeapon_Modern_Basic</li>
+						<li>CGF1_ImprovisedWeapon_Modern_Advanced</li>
+						<li>CGF1_ToolWeapon_Modern_Crude</li>
+						<li>CGF1_ToolWeapon_Modern_Basic</li>
+						<li>CGF1_ToolWeapon_Modern_Advanced</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

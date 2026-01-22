@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleDef Name="CGF1_MWP_VehiclePawn_Land" ParentName="BaseVehiclePawn" Abstract="True">
+		<properties>
+			<worldSpeedMultiplier>1</worldSpeedMultiplier>
+		</properties>
+		
+		<vehicleStats>
+			<AccelerationRate MayRequire="OskarPotocki.VanillaVehiclesExpanded">0.03</AccelerationRate>
+		</vehicleStats>
+		
+		<comps>
+			<li MayRequire="OskarPotocki.VanillaVehiclesExpanded" Class="VanillaVehiclesExpanded.CompProperties_VehicleMovementController"></li>
+		</comps>
+	</Vehicles.VehicleDef>
+	
+	<Vehicles.VehicleDef Name="CGF1_MWP_VehiclePawn_Car" ParentName="CGF1_MWP_VehiclePawn_Land" Abstract = "True">
+		<properties>
+			<customTerrainCosts DisallowTerrainWithTag="Water"/>
+		</properties>
+		
+		<soundOneShotsOnEvent Inherit = "False">
+			<li>
+				<key>PawnEntered</key>
+				<value>CGF1_GG_SFXR_OneShot_Door_Car</value>
+			</li>
+			<li>
+				<key>PawnExited</key>
+				<value>CGF1_GG_SFXR_OneShot_Door_Car</value>
+			</li>
+			<li>
+				<key>IgnitionOn</key>
+				<value>CGF1_GG_SFXR_OneShot_Start_Car</value>
+			</li>
+			<li>
+				<key>IgnitionOff</key>
+				<value>CGF1_GG_SFXR_OneShot_Stop_Car</value>
+			</li>
+		</soundOneShotsOnEvent>
+	</Vehicles.VehicleDef>
+	
+	<Vehicles.VehicleDef Name="CGF1_MWP_VehiclePawn_Armor" ParentName="CGF1_MWP_VehiclePawn_Land" Abstract = "True">
+		<soundOneShotsOnEvent Inherit="False">
+			<li>
+				<key>PawnEntered</key>
+				<value>CGF1_GG_SFXR_OneShot_Door_Jeep</value>
+			</li>
+			<li>
+				<key>PawnExited</key>
+				<value>CGF1_GG_SFXR_OneShot_Door_Jeep</value>
+			</li>
+			<li>
+				<key>IgnitionOn</key>
+				<value>CGF1_GG_SFXR_OneShot_Start_Tank</value>
+			</li>
+			<li>
+				<key>IgnitionOff</key>
+				<value>CGF1_GG_SFXR_OneShot_Stop_Car</value>
+			</li>
+		</soundOneShotsOnEvent>
+	</Vehicles.VehicleDef>
+	
+	<Vehicles.VehicleDef Name="CGF1_MWP_VehiclePawn_HeavyArmor" ParentName="CGF1_MWP_VehiclePawn_Land" Abstract = "True">
+		<soundOneShotsOnEvent Inherit="False">
+			<li>
+				<key>PawnEntered</key>
+				<value>CGF1_GG_SFXR_OneShot_Door_Hatch</value>
+			</li>
+			<li>
+				<key>PawnExited</key>
+				<value>CGF1_GG_SFXR_OneShot_Door_Hatch</value>
+			</li>
+			<li>
+				<key>IgnitionOn</key>
+				<value>CGF1_GG_SFXR_OneShot_Start_HeavyTank</value>
+			</li>
+			<li>
+				<key>IgnitionOff</key>
+				<value>CGF1_GG_SFXR_OneShot_Stop_Car</value>
+			</li>
+		</soundOneShotsOnEvent>
+	</Vehicles.VehicleDef>
+</Defs>

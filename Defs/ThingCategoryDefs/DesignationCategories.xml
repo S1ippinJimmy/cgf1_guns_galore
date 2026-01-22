@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DesignationCategoryDef>
+		<defName>CGF1_MWP_Category_GunsGalore</defName>
+		<label>guns galore</label>
+		<order>23</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_RWS</defName>
+		<label>RWS</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_MRWS</defName>
+		<label>MRWS</label>
+	</DesignatorDropdownGroupDef>
+	
+	
+	
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_Becker</defName>
+		<label>Becker Type M2</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_Bren</defName>
+		<label>Bren Gun</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_DP28</defName>
+		<label>DP-28</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_DreyseMG15</defName>
+		<label>Dreyse MG15</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_DShK</defName>
+		<label>DShK</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_FNMAG</defName>
+		<label>FN MAG</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_FNMinimi</defName>
+		<label>FN Minimi</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_Gatling</defName>
+		<label>Gatling Gun</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_GAU19</defName>
+		<label>GAU-19</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_HK21</defName>
+		<label>HK21</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_L6WOMBAT</defName>
+		<label>L6 WOMBAT</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_M134</defName>
+		<label>M134</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_M1917</defName>
+		<label>M1917</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_M1919</defName>
+		<label>M1919</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_M2</defName>
+		<label>M2</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_M40</defName>
+		<label>M40 Recoilless</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_M60</defName>
+		<label>M60 Recoilless</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_Maxim</defName>
+		<label>Maxim</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_MG42</defName>
+		<label>MG-42</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_Mk19</defName>
+		<label>Mk.19</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_Parabellum_MG14</defName>
+		<label>Parabellum MG14</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_PK</defName>
+		<label>PK</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_RPD</defName>
+		<label>RPD</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_Schwarzlose</defName>
+		<label>Schwarzlose</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_Skoda</defName>
+		<label>Škoda</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_TOW</defName>
+		<label>M2</label>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>CGF1_MWP_Dropdown_Type77</defName>
+		<label>Type 77</label>
+	</DesignatorDropdownGroupDef>
+</Defs>

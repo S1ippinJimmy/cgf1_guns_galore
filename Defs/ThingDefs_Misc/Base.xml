@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- B:5, S:235 -->
+	
+	
+	
+	<ThingDef Name="CGF1_MWP_BaseHumanMakeableGun" ParentName="BaseGun" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<smeltable>true</smeltable>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<relicChance>0.0</relicChance>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>CGF1_GunsGalore_Spawn</li>
+		</tradeTags>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseHumanMakeableGun_NQ" ParentName="BaseGun" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<smeltable>true</smeltable>
+		<relicChance>0.0</relicChance>
+		<tradeTags Inherit="False"/>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="CGF1_MWP_BaseHumanMakeableRanged" ParentName="BaseWeapon" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<burnableByRecipe>true</burnableByRecipe>
+		<statBases>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li> 
+		</comps>
+		<relicChance>1.0</relicChance>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>CGF1_GunsGalore_Spawn</li>
+		</tradeTags>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smelt</effectWorking>
+			<soundWorking>Recipe_MakeBow</soundWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseHumanMakeableRanged_Throwing" ParentName="BaseWeapon" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<burnableByRecipe>true</burnableByRecipe>
+		<statBases>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<relicChance>1.0</relicChance>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>CGF1_GunsGalore_Spawn</li>
+		</tradeTags>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smelt</effectWorking>
+			<soundWorking>Recipe_MakeBow</soundWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseHumanMakeableRanged_Throwing_NQ" ParentName="BaseWeapon" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<burnableByRecipe>true</burnableByRecipe>
+		<statBases>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<relicChance>1.0</relicChance>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>CGF1_GunsGalore_Spawn</li>
+		</tradeTags>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smelt</effectWorking>
+			<soundWorking>Recipe_MakeBow</soundWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseHumanGun_1H" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseHumanGun_2H" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseHumanGun_2H_Heavy" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_Launcher_Disposable_NQ" ParentName="BaseGun" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<smeltable>true</smeltable>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+		<relicChance>0.00</relicChance>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>CGF1_GunsGalore_Spawn</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseGrenade" ParentName="BaseWeapon" Abstract="True">
+		<weaponClasses>
+		  <li>Ranged</li>
+		</weaponClasses>
+		<tradeTags>
+		  <li>WeaponRanged</li>
+		  <li>CGF1_GunsGalore_Spawn</li>
+		</tradeTags>
+		<thingCategories Inherit="False">
+			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
+		</thingCategories>
+	  </ThingDef>
+	
+	
+	
+	
+	<!-- Classes -->
+	
+	
+	<!-- Types -->
+	
+	<ThingDef Name="CGF1_MWP_Grenade" ParentName="CGF1_MWP_BaseGrenade" Abstract="True">
+		<soundInteract>Interact_Grenade</soundInteract>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_ATLauncher_Disposable_T0" ParentName="CGF1_MWP_Launcher_Disposable_NQ" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_ATLauncher_Disposable_T1" ParentName="CGF1_MWP_Launcher_Disposable_NQ" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_ATLauncher_Disposable_Guided_T0" ParentName="CGF1_MWP_Launcher_Disposable_NQ" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_ATLauncher_Disposable_Guided_T1" ParentName="CGF1_MWP_Launcher_Disposable_NQ" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_ATLauncher_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_ATLauncher_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_ATLauncher_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_ATLauncher_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_ElephantRifle_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_ATRifle_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_ATRifle_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_GrenadeLauncher_T1_PumpAction" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_GrenadeLauncher_T1_Semi" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_GrenadeLauncher_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_GrenadeLauncher_T2_Semi" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_GrenadeLauncher_T2_PumpAction" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_GrenadeLauncher_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_MANPADS_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_MANPADS_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_MANPADS_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_AssaultRifle_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_AssaultRifle_Carbine_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_AssaultRifle_Long_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_AssaultRifle_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_AssaultRifle_Carbine_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_AssaultRifle_Long_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="CGF1_MWP_BattleRifle_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_BattleRifle_T0_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_BattleRifle_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_BattleRifle_T1_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_BattleRifle_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_BattleRifle_T2_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+
+	
+	<ThingDef Name="CGF1_MWP_Derringer_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Derringer_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Derringer_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_SignalPistol" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags Inherit="False"/>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<!-- Improvised -->
+	
+	<ThingDef Name="CGF1_MWP_Pistol_Improvised" ParentName="CGF1_MWP_BaseHumanMakeableGun_NQ" Abstract="True">
+		<soundInteract>Interact_Autopistol</soundInteract>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SMG_Improvised" ParentName="CGF1_MWP_BaseHumanMakeableGun_NQ" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Shotgun_Improvised" ParentName="CGF1_MWP_BaseHumanMakeableGun_NQ" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_Improvised" ParentName="CGF1_MWP_BaseHumanMakeableGun_NQ" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_Pistol_BoltAction_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_T1_SNS" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_Compact_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_Compact_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_Compact_T1_SNS" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_Compact_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_HandCannon_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_Target_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_Target_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_Target_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+		</statBases>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_SS" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+			<li>Revolver</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_LeverAction_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_LeverAction_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_SSPercussion_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_SSFlintlock_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_SSFlintlock_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_SSFlintlock_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_SSWheellock" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Pistol_SSMatchlock" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_MachinePistol_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+			<!--<li>ShortShots</li>-->
+		</weaponTags>
+		<soundInteract>Interact_SMG</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_MachinePistol_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+			<!--<li>ShortShots</li>-->
+		</weaponTags>
+		<soundInteract>Interact_SMG</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_MachinePistol_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+			<!--<li>ShortShots</li>-->
+		</weaponTags>
+		<soundInteract>Interact_SMG</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Name="CGF1_MWP_Revolver_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+			<li>Revolver</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Revolver_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+			<li>Revolver</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Revolver_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+			<li>Revolver</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Revolver_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+			<li>Revolver</li>
+		</weaponTags>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Revolver_HandCannon_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+			<li>Revolver</li>
+		</weaponTags>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	<ThingDef Name="CGF1_MWP_PistolCarbine_SemiAuto_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_PistolCarbine_SemiAuto_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_PistolCarbine_SemiAuto_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T1_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T1_Stockless" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T1_Coach" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T1_SawedOff" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T2_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T3_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T4" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltAction_T4_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+
+	
+	<ThingDef Name="CGF1_MWP_Rifle_BoltActionAMR_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltActionAMR_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_Rifle_SemiAutoAMR_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_SemiAutoAMR_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_Rifle_BoltActionSniper_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltActionSniper_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltActionSniper_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_Rifle_BoltActionRifle_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltActionRifle_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_BoltActionRifle_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_SemiAutoSniper_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SniperRifle</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoSniper_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SniperRifle</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoSniper_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SniperRifle</li>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	<ThingDef Name="CGF1_MWP_Rifle_LeverAction_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_LeverAction_T1_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_LeverAction_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_LeverAction_T2_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_LeverAction_T2_MaresLeg" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_LeverAction_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_LeverAction_T3_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_LeverAction_T4" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_LeverAction_T4_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	<ThingDef Name="CGF1_MWP_SemiBattleRifle_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiBattleRifle_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiBattleRifle_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiBattleRifle_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_SemiAutoRifle_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoRifle_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoRifle_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Name="CGF1_MWP_Rifle_SingleShot_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_SingleShot_T2_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_SingleShot_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_SingleShot_T3_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_SingleShot_T4" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Rifle_SingleShot_T4_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_Musket_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Musket_T1_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Musket_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Musket_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Musket_T4" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Musket_T5" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Musket_T6" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Musket_T6_Carbine" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Musket_T7" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	<ThingDef Name="CGF1_MWP_Musket_Handbombard_T7" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	<ThingDef Name="CGF1_MWP_AutoShotgun_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_PumpShotgun_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_AssaultShotgun_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoShotgun_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoShotgun_Coach_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoShotgun_Sawed_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_PumpShotgun_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_PumpShotgun_T1_Stockless" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_PumpShotgun_T1_Coach" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_PumpShotgun_T1_Sawed" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoShotgun_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoShotgun_Stockless_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoShotgun_Coach_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SemiAutoShotgun_Sawed_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_PumpShotgun_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SingleShotgun_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SingleShotgun_T1_Coach" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SingleShotgun_T1_SawedOff" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SingleShotgun_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SingleShotgun_T2_Coach" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SingleShotgun_T2_SawedOff" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>SimpleGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	
+	<ThingDef Name="CGF1_MWP_PDW_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_SMG</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SMG_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_SMG</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SMG_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_SMG</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SMG_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_SMG</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_SMG_T3" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<soundInteract>Interact_SMG</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef Name="CGF1_MWP_GPMG_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_GPMG_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_GPMG_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_LMG_BeltFed_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_LMG_BeltFed_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_LMG_MagFed_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_LMG_MagFed_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_LMG_MagFed_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_Autocannon_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_HMG_Dismounted_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_HMG_Dismounted_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_HMG_Dismounted_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_MountedLauncher_Dismounted_T0" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_MountedLauncher_Dismounted_T1" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	<ThingDef Name="CGF1_MWP_MountedLauncher_Dismounted_T2" ParentName="CGF1_MWP_BaseHumanMakeableGun" Abstract="True">
+		<soundInteract>Interact_Rifle</soundInteract>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+</Defs>

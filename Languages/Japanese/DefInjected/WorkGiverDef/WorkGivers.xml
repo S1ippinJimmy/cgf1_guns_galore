@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Tailoring -->
+
+  <DoBillsMakeGunsGaloreWeapon.label>武器を作る</DoBillsMakeGunsGaloreWeapon.label>
+  <DoBillsMakeGunsGaloreWeapon.verb>製作</DoBillsMakeGunsGaloreWeapon.verb>
+  <DoBillsMakeGunsGaloreWeapon.gerund>製作中</DoBillsMakeGunsGaloreWeapon.gerund>
+
+</LanguageData>

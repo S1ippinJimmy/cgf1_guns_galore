@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_OneShot_Door_Car</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/door_car</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_OneShot_Door_Hatch</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/door_hatch</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_OneShot_Door_Jeep</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/door_jeep</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_OneShot_Start_Car</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/start_car</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_OneShot_Start_HeavyTank</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/start_heavytank</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_OneShot_Start_Tank</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/start_tank</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_OneShot_Stop_Car</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/stop_car</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+  
+</Defs>

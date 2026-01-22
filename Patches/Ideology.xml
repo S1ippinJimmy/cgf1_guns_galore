@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- Unaffiliated Outlanders -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Farmer" or defName="Miner" or defName="Logger"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Ideology_Outlander</li>
+						
+						<li>CGF1_Pistol_Civilian</li>
+						<li>CGF1_Revolver_Civilian</li>
+						<li>CGF1_Revolver_Old</li>
+						<li>CGF1_Rifle_Civilian</li>
+						<li>CGF1_Shotgun_Civilian</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Hunter"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Ideology_Outlander_Hunter</li>
+						
+						<li>CGF1_Revolver_Civilian</li>
+						<li>CGF1_Revolver_Old</li>
+						<li>CGF1_Rifle_Civilian</li>
+						<li>CGF1_Shotgun_Civilian</li>
+						<li>CGF1_Crossbow_Medieval</li>
+						<li>CGF1_Crossbow_Renaissance</li>
+						<li>CGF1_ThrowingLight_Modern</li>
+					</value>
+				</li>
+				
+				<!-- Unaffiliated Tribals -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Tribal_Miner"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Ideology_Tribal_Miner</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Tribal_Logger"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Ideology_Tribal_Logger</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Tribal_Farmer"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Ideology_Tribal_Farmer</li>
+					</value>
+				</li>
+				
+				<!-- Travellers -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Beggar" or defName="PovertyPilgrim"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Ideology_Beggar</li>
+						
+						<li>CGF1_Pistol_Civilian</li>
+						<li>CGF1_Pistol_Military</li>
+						<li>CGF1_ToolWeapon_Modern_Crude</li>
+						<li>CGF1_ToolWeapon_Modern_Basic</li>
+						<li>CGF1_ImprovisedWeapon_Modern_Crude</li>
+						<li>CGF1_ImprovisedWeapon_Modern_Basic</li>
+						<li>CGF1_Bludgeon_Modern</li>	
+						<li>CGF1_ThrowingLight_Modern_Improvised</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="WellEquippedTraveler"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Ideology_WellEquippedTraveler</li>
+						
+						<li>CGF1_AR_Military</li>
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_AR_Military_SpecOps</li>
+						<li>CGF1_LMG_Military</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_LMG_Military_SpecOps</li>
+						<li>CGF1_Pistol_Military_SpecOps</li>
+						<li>CGF1_Rifle_Marksman_Advanced</li>
+						<li>CGF1_Rifle_Marksman_SpecOps</li>
+						<li>CGF1_Rifle_Military_Advanced</li>
+						<li>CGF1_Rifle_Military_SpecOps</li>
+						<li>CGF1_Shotgun_Military_Advanced</li>
+						<li>CGF1_Shotgun_Military_Assault</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+						<li>CGF1_SMG_Military_SpecOps</li>
+						<li>CGF1_SniperRifle_Advanced</li>
+						<li>CGF1_SniperRifle_SpecOps</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

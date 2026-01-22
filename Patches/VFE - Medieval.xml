@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM_Medieval_Peasant"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Knife_Medieval</li>
+						<li>CGF1_Tool_Cooking_Medieval</li>
+						<li>CGF1_Tool_Construction_Medieval</li>
+						<li>CGF1_Tool_Crafting_Medieval</li>
+						<li>CGF1_Tool_Farming_Medieval</li>
+						<li>CGF1_Tool_Mining_Medieval</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM_Medieval_Merchant" or defName="VFEM_Medieval_Jester" or defName="VFEM_Medieval_Dame"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Knife_Medieval</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM_Medieval_Squire"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Sword_Medieval</li>
+						<li>CGF1_Axe_Medieval</li>
+						<li>CGF1_Bludgeon_Medieval</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM_Medieval_Footsoldier"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Sword_Medieval</li>
+						<li>CGF1_Spear_Medieval</li>
+						<li>CGF1_Axe_Medieval</li>
+						<li>CGF1_Axe_Medieval_Great</li>
+						<li>CGF1_Hammer_Medieval</li>
+						<li>CGF1_Bludgeon_Medieval</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEM_Medieval_Knight"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Sword_Medieval</li>
+						<li>CGF1_Sword_Medieval_Great</li>
+						<li>CGF1_Hammer_Medieval</li>
+						<li>CGF1_Hammer_Medieval_Great</li>
+						<li>CGF1_Bludgeon_Medieval</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

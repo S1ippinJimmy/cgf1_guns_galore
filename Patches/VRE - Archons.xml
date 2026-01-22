@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Archon</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Archons -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="ArchonWarrior"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Archon</li>
+					</value>
+				</li>		
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Guns Galore - Core</name>
+	<author>Chaingunfighter1 / Slippin' Jimmy</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2949320350</url>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl>
+			<downloadUrl>https://github.com/AndroidQuazar/VanillaExpandedFramework</downloadUrl>
+		</li>
+	</modDependencies>
+	<packageId>cgf1.gunsgalorecore</packageId>
+	<description>
+&lt;size=24&gt;Features&lt;/size&gt;
+
+This mod adds no weapons, only the workbenches and research projects used to create ones from other modules. Check them out in the collections above.
+
+Supports working multi-caliber firearms, alternate firing modes, and underbarrel weapons (grenade launchers, breaching shotguns, etc) where applicable, thanks to Vanilla Expanded Framework's MVCF functions.
+
+Combat Extended support - Adds dozens of new calibers and cartridges from all over history. It also makes minor changes to the ammunition sets for a few existing types (namely allowing real life inter-compatible cartridges to be used in the same weapons; 7.62x25mm Tokarev guns can now use 7.63x25mm Mauser, .460 SW can now use .454 Casull, .45 Schofield, etc.)
+	</description>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>CETeam.CombatExtended</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>VanillaExpanded.VWEHW</li>
+		<li>VanillaExpanded.VWENL</li>
+		<li>VanillaExpanded.VFEA</li>
+		<li>vanillaracesexpanded.archon</li>
+		<li>SmashPhil.VehicleFramework</li>
+		<li>OskarPotocki.VanillaVehiclesExpanded</li>
+		<li>OskarPotocki.VanillaVehiclesExpandedUpgrades</li>
+	</loadAfter>
+	<loadBefore>
+		<li>cgf1.gunsgalore.industrialage.i</li>
+		<li>cgf1.gunsgalore.americancivilwar.i</li>
+		<li>cgf1.gunsgalore.coldwar.uk</li>
+		<li>cgf1.gunsgalore.coldwar.commonwealth</li>
+		<li>cgf1.gunsgalore.magnum.i</li>
+		<li>cgf1.gunsgalore.coldwar.germanyaustria</li>
+		<li>cgf1.gunsgalore.coldwar.usa</li>
+		<li>cgf1.gunsgalore.modern.northkorea</li>
+		<li>cgf1.gunsgalore.coldwar.chinavietnam</li>
+		<li>cgf1.gunsgalore.copsandrobbers.coldwar</li>
+		<li>cgf1.gunsgalore.greatwar.centralpowers</li>
+		<li>cgf1.gunsgalore.ww2.europeanaxis</li>
+		<li>cgf1.gunsgalore.coldwar.ussr</li>
+		<li>cgf1.gunsgalore.x.hexagontactical</li>
+		<li>cgf1.gunsgalore.x.runningunners</li>
+	</loadBefore>
+</ModMetaData>

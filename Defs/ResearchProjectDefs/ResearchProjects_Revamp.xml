@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>CGF1_MWP_ResearchTab_GunsGalore_Test</defName>
+		<label>Guns Galore</label>
+	</ResearchTabDef>
+	
+	<!-- Bronze Age -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T0_BronzeAgeMelee</defName>
+		<label>Bronze Age melee weapons</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T0_BronzeAgeRanged</defName>
+		<label>Bronze Age ranged weapons</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<researchViewX>0</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Iron Age -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T0_IronAgeMelee</defName>
+		<label>Iron Age melee weapons</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T0_BronzeAgeMelee</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T0_IronAgeRanged</defName>
+		<label>Iron Age ranged weapons</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T0_BronzeAgeRanged</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Medieval -->
+
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T0_MedievalFirearms</defName>
+		<label>Medieval firearms</label>
+		<description>N/A</description>
+		<baseCost>250</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T0_MedievalEmplacements</defName>
+		<label>Medieval emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T0_MedievalFirearms</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T0_MedievalMelee</defName>
+		<label>Medieval melee weapons</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>CGF1_MWP_Research_T0_IronAgeMelee</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T0_MedievalRanged</defName>
+		<label>Medieval ranged weapons</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>Smithing</li>
+			<li>CGF1_MWP_Research_T0_IronAgeRanged</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T0_MedievalTools</defName>
+		<label>medieval tools</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Renaissance -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T1_RenaissanceFirearms</defName>
+		<label>Renaissance firearms</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T0_MedievalFirearms</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T1_RenaissanceEmplacements</defName>
+		<label>Renaissance emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T1_RenaissanceFirearms</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T1_RenaissanceMelee</defName>
+		<label>Renaissance melee weapons</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T0_MedievalMelee</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T1_RenaissanceRanged</defName>
+		<label>Renaissance ranged weapons</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T0_MedievalRanged</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Imperial Age -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T2_ImperialAgeFirearms</defName>
+		<label>Imperial Age firearms</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T1_RenaissanceFirearms</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T2_ImperialAgeEmplacements</defName>
+		<label>Imperial Age emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T2_ImperialAgeFirearms</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T2_ImperialAgeMelee</defName>
+		<label>Imperial Age melee weapons</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T1_RenaissanceMelee</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Early Industrial -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T3_EarlyIndustrialFirearms</defName>
+		<label>early industrial firearms</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T2_ImperialAgeFirearms</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T3_EarlyIndustrialEmplacements</defName>
+		<label>early industrial emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T3_EarlyIndustrialFirearms</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T3_EarlyIndustrialMelee</defName>
+		<label>early industrial melee weapons</label>
+		<description>N/A</description>
+		<baseCost>100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T2_ImperialAgeMelee</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Industrial -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T4_IndustrialFirearms</defName>
+		<label>industrial firearms</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T3_EarlyIndustrialFirearms</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T4_IndustrialEmplacements</defName>
+		<label>industrial emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T4_IndustrialFirearms</li>
+		</prerequisites>
+		<researchViewX>7</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T4_IndustrialMelee</defName>
+		<label>industrial melee weapons</label>
+		<description>N/A</description>
+		<baseCost>100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T3_EarlyIndustrialMelee</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T4_ToyWeapons</defName>
+		<label>toy weapons</label>
+		<description>N/A</description>
+		<baseCost>75</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T4_ImprovisedWeapons</defName>
+		<label>improvised weapons</label>
+		<description>N/A</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<researchViewX>6</researchViewX>
+		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T4_IndustrialTools</defName>
+		<label>industrial tools</label>
+		<description>N/A</description>
+		<baseCost>350</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T0_MedievalTools</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T4_IndustrialApparel</defName>
+		<label>industrial apparel</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>ComplexClothing</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>4.75</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T4_ModernRanged</defName>
+		<label>modern ranged weapons</label>
+		<description>N/A</description>
+		<baseCost>100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>Machining</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Late Industrial -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T5_LateIndustrialFirearms</defName>
+		<label>late industrial firearms</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>CGF1_MWP_Research_T4_IndustrialFirearms</li>
+		</prerequisites>
+		<researchViewX>7</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T5_LateIndustrialEmplacements</defName>
+		<label>late industrial turrets</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T5_LateIndustrialFirearms</li>
+		</prerequisites>
+		<researchViewX>8</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T5_LateIndustrialMelee</defName>
+		<label>late industrial melee weapons</label>
+		<description>N/A</description>
+		<baseCost>100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T4_IndustrialMelee</li>
+		</prerequisites>
+		<researchViewX>7</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T5_PowerTools</defName>
+		<label>power tools</label>
+		<description>N/A</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>CGF1_MWP_Research_T4_IndustrialTools</li>
+		</prerequisites>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Great War -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T6_GreatWarFirearms</defName>
+		<label>Great War firearms</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>Machining</li>
+			<li>CGF1_MWP_Research_T5_LateIndustrialFirearms</li>
+		</prerequisites>
+		<researchViewX>8</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T6_GreatWarEmplacements</defName>
+		<label>Great War emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T6_GreatWarFirearms</li>
+		</prerequisites>
+		<researchViewX>9</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T6_GreatWarMelee</defName>
+		<label>Great War melee weapons</label>
+		<description>N/A</description>
+		<baseCost>100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T5_LateIndustrialMelee</li>
+		</prerequisites>
+		<researchViewX>8</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- WWII -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T7_WW2Firearms</defName>
+		<label>WWII firearms</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T6_GreatWarFirearms</li>
+		</prerequisites>
+		<researchViewX>9</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T7_WW2Emplacements</defName>
+		<label>WWII emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T7_WW2Firearms</li>
+		</prerequisites>
+		<researchViewX>10</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T7_WW2Melee</defName>
+		<label>WWII melee weapons</label>
+		<description>N/A</description>
+		<baseCost>100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T6_GreatWarMelee</li>
+		</prerequisites>
+		<researchViewX>9</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Atomic Age -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T8_AtomicAgeFirearms</defName>
+		<label>Atomic Age firearms</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T7_WW2Firearms</li>
+		</prerequisites>
+		<researchViewX>10</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T8_AtomicAgeEmplacements</defName>
+		<label>Atomic Age emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T8_AtomicAgeFirearms</li>
+		</prerequisites>
+		<researchViewX>11</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T8_AtomicAgeMelee</defName>
+		<label>Atomic Age melee weapons</label>
+		<description>N/A</description>
+		<baseCost>100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T7_WW2Melee</li>
+		</prerequisites>
+		<researchViewX>10</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Space Age -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T9_SpaceAgeFirearms</defName>
+		<label>Space Age firearms</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T8_AtomicAgeFirearms</li>
+		</prerequisites>
+		<researchViewX>11</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T9_SpaceAgeEmplacements</defName>
+		<label>Space Age emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T9_SpaceAgeFirearms</li>
+		</prerequisites>
+		<researchViewX>12</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T9_SpaceAgeMelee</defName>
+		<label>Space Age melee weapons</label>
+		<description>N/A</description>
+		<baseCost>100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T8_AtomicAgeMelee</li>
+		</prerequisites>
+		<researchViewX>11</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- Modern -->
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T10_ModernFirearms</defName>
+		<label>Modern firearms</label>
+		<description>N/A</description>
+		<baseCost>400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T9_SpaceAgeFirearms</li>
+		</prerequisites>
+		<researchViewX>12</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T10_ModernEmplacements</defName>
+		<label>Modern emplacements</label>
+		<description>N/A</description>
+		<baseCost>200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T10_ModernFirearms</li>
+		</prerequisites>
+		<researchViewX>13</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>CGF1_MWP_Research_T10_ModernMelee</defName>
+		<label>Modern melee weapons</label>
+		<description>N/A</description>
+		<baseCost>100</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>CGF1_MWP_ResearchTab_GunsGalore_Test</tab>
+		<prerequisites>
+			<li>CGF1_MWP_Research_T9_SpaceAgeMelee</li>
+		</prerequisites>
+		<researchViewX>12</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

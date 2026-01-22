@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Empire</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Deserters -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEE_Deserter"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFEE_Deserter</li>
+						
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_Rifle_Marksman_Advanced</li>
+						<li>CGF1_Rifle_Military_Advanced</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+					</value>
+				</li>
+				
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

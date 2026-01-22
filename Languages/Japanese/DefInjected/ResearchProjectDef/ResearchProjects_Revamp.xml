@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Bronze Age -->
+
+  <CGF1_MWP_Research_T0_BronzeAgeMelee.label>青銅器時代の近接武器</CGF1_MWP_Research_T0_BronzeAgeMelee.label>
+  <CGF1_MWP_Research_T0_BronzeAgeMelee.description>N/A</CGF1_MWP_Research_T0_BronzeAgeMelee.description>
+
+  <CGF1_MWP_Research_T0_BronzeAgeRanged.label>青銅器時代の遠距離武器</CGF1_MWP_Research_T0_BronzeAgeRanged.label>
+  <CGF1_MWP_Research_T0_BronzeAgeRanged.description>N/A</CGF1_MWP_Research_T0_BronzeAgeRanged.description>
+
+  <!-- Iron Age -->
+
+  <CGF1_MWP_Research_T0_IronAgeMelee.label>鉄器時代の近接武器</CGF1_MWP_Research_T0_IronAgeMelee.label>
+  <CGF1_MWP_Research_T0_IronAgeMelee.description>N/A</CGF1_MWP_Research_T0_IronAgeMelee.description>
+
+  <CGF1_MWP_Research_T0_IronAgeRanged.label>鉄器時代の遠距離武器</CGF1_MWP_Research_T0_IronAgeRanged.label>
+  <CGF1_MWP_Research_T0_IronAgeRanged.description>N/A</CGF1_MWP_Research_T0_IronAgeRanged.description>
+
+  <!-- Medieval -->
+
+  <CGF1_MWP_Research_T0_MedievalFirearms.label>中世の火器</CGF1_MWP_Research_T0_MedievalFirearms.label>
+  <CGF1_MWP_Research_T0_MedievalFirearms.description>N/A</CGF1_MWP_Research_T0_MedievalFirearms.description>
+
+  <CGF1_MWP_Research_T0_MedievalEmplacements.label>中世の陣地設置物</CGF1_MWP_Research_T0_MedievalEmplacements.label>
+  <CGF1_MWP_Research_T0_MedievalEmplacements.description>N/A</CGF1_MWP_Research_T0_MedievalEmplacements.description>
+
+  <CGF1_MWP_Research_T0_MedievalMelee.label>中世の近接武器</CGF1_MWP_Research_T0_MedievalMelee.label>
+  <CGF1_MWP_Research_T0_MedievalMelee.description>N/A</CGF1_MWP_Research_T0_MedievalMelee.description>
+
+  <CGF1_MWP_Research_T0_MedievalRanged.label>中世の遠距離武器</CGF1_MWP_Research_T0_MedievalRanged.label>
+  <CGF1_MWP_Research_T0_MedievalRanged.description>N/A</CGF1_MWP_Research_T0_MedievalRanged.description>
+
+  <CGF1_MWP_Research_T0_MedievalTools.label>中世の道具</CGF1_MWP_Research_T0_MedievalTools.label>
+  <CGF1_MWP_Research_T0_MedievalTools.description>N/A</CGF1_MWP_Research_T0_MedievalTools.description>
+
+  <!-- Renaissance -->
+
+  <CGF1_MWP_Research_T1_RenaissanceFirearms.label>ルネサンス期の火器</CGF1_MWP_Research_T1_RenaissanceFirearms.label>
+  <CGF1_MWP_Research_T1_RenaissanceFirearms.description>N/A</CGF1_MWP_Research_T1_RenaissanceFirearms.description>
+
+  <CGF1_MWP_Research_T1_RenaissanceEmplacements.label>ルネサンス期の陣地設置物</CGF1_MWP_Research_T1_RenaissanceEmplacements.label>
+  <CGF1_MWP_Research_T1_RenaissanceEmplacements.description>N/A</CGF1_MWP_Research_T1_RenaissanceEmplacements.description>
+
+  <CGF1_MWP_Research_T1_RenaissanceMelee.label>ルネサンス期の近接武器</CGF1_MWP_Research_T1_RenaissanceMelee.label>
+  <CGF1_MWP_Research_T1_RenaissanceMelee.description>N/A</CGF1_MWP_Research_T1_RenaissanceMelee.description>
+
+  <CGF1_MWP_Research_T1_RenaissanceRanged.label>ルネサンス期の遠距離武器</CGF1_MWP_Research_T1_RenaissanceRanged.label>
+  <CGF1_MWP_Research_T1_RenaissanceRanged.description>N/A</CGF1_MWP_Research_T1_RenaissanceRanged.description>
+
+  <!-- Imperial Age -->
+
+  <CGF1_MWP_Research_T2_ImperialAgeFirearms.label>帝国時代の火器</CGF1_MWP_Research_T2_ImperialAgeFirearms.label>
+  <CGF1_MWP_Research_T2_ImperialAgeFirearms.description>N/A</CGF1_MWP_Research_T2_ImperialAgeFirearms.description>
+
+  <CGF1_MWP_Research_T2_ImperialAgeEmplacements.label>帝国時代の陣地設置物</CGF1_MWP_Research_T2_ImperialAgeEmplacements.label>
+  <CGF1_MWP_Research_T2_ImperialAgeEmplacements.description>N/A</CGF1_MWP_Research_T2_ImperialAgeEmplacements.description>
+
+  <CGF1_MWP_Research_T2_ImperialAgeMelee.label>帝国時代の近接武器</CGF1_MWP_Research_T2_ImperialAgeMelee.label>
+  <CGF1_MWP_Research_T2_ImperialAgeMelee.description>N/A</CGF1_MWP_Research_T2_ImperialAgeMelee.description>
+
+  <!-- Early Industrial -->
+
+  <CGF1_MWP_Research_T3_EarlyIndustrialFirearms.label>初期産業時代の火器</CGF1_MWP_Research_T3_EarlyIndustrialFirearms.label>
+  <CGF1_MWP_Research_T3_EarlyIndustrialFirearms.description>N/A</CGF1_MWP_Research_T3_EarlyIndustrialFirearms.description>
+
+  <CGF1_MWP_Research_T3_EarlyIndustrialEmplacements.label>初期産業時代の陣地設置物</CGF1_MWP_Research_T3_EarlyIndustrialEmplacements.label>
+  <CGF1_MWP_Research_T3_EarlyIndustrialEmplacements.description>N/A</CGF1_MWP_Research_T3_EarlyIndustrialEmplacements.description>
+
+  <CGF1_MWP_Research_T3_EarlyIndustrialMelee.label>初期産業時代の近接武器</CGF1_MWP_Research_T3_EarlyIndustrialMelee.label>
+  <CGF1_MWP_Research_T3_EarlyIndustrialMelee.description>N/A</CGF1_MWP_Research_T3_EarlyIndustrialMelee.description>
+
+  <!-- Industrial -->
+
+  <CGF1_MWP_Research_T4_IndustrialFirearms.label>産業時代の火器</CGF1_MWP_Research_T4_IndustrialFirearms.label>
+  <CGF1_MWP_Research_T4_IndustrialFirearms.description>N/A</CGF1_MWP_Research_T4_IndustrialFirearms.description>
+
+  <CGF1_MWP_Research_T4_IndustrialEmplacements.label>産業時代の陣地設置物</CGF1_MWP_Research_T4_IndustrialEmplacements.label>
+  <CGF1_MWP_Research_T4_IndustrialEmplacements.description>N/A</CGF1_MWP_Research_T4_IndustrialEmplacements.description>
+
+  <CGF1_MWP_Research_T4_IndustrialMelee.label>産業時代の近接武器</CGF1_MWP_Research_T4_IndustrialMelee.label>
+  <CGF1_MWP_Research_T4_IndustrialMelee.description>N/A</CGF1_MWP_Research_T4_IndustrialMelee.description>
+
+  <CGF1_MWP_Research_T4_ToyWeapons.label>おもちゃの武器</CGF1_MWP_Research_T4_ToyWeapons.label>
+  <CGF1_MWP_Research_T4_ToyWeapons.description>N/A</CGF1_MWP_Research_T4_ToyWeapons.description>
+
+  <CGF1_MWP_Research_T4_ImprovisedWeapons.label>即席武器</CGF1_MWP_Research_T4_ImprovisedWeapons.label>
+  <CGF1_MWP_Research_T4_ImprovisedWeapons.description>N/A</CGF1_MWP_Research_T4_ImprovisedWeapons.description>
+
+  <CGF1_MWP_Research_T4_IndustrialTools.label>産業時代の道具</CGF1_MWP_Research_T4_IndustrialTools.label>
+  <CGF1_MWP_Research_T4_IndustrialTools.description>N/A</CGF1_MWP_Research_T4_IndustrialTools.description>
+
+  <CGF1_MWP_Research_T4_IndustrialApparel.label>産業時代の衣服</CGF1_MWP_Research_T4_IndustrialApparel.label>
+  <CGF1_MWP_Research_T4_IndustrialApparel.description>N/A</CGF1_MWP_Research_T4_IndustrialApparel.description>
+
+  <CGF1_MWP_Research_T4_ModernRanged.label>近代の遠距離武器</CGF1_MWP_Research_T4_ModernRanged.label>
+  <CGF1_MWP_Research_T4_ModernRanged.description>N/A</CGF1_MWP_Research_T4_ModernRanged.description>
+
+  <!-- Late Industrial -->
+
+  <CGF1_MWP_Research_T5_LateIndustrialFirearms.label>後期産業時代の火器</CGF1_MWP_Research_T5_LateIndustrialFirearms.label>
+  <CGF1_MWP_Research_T5_LateIndustrialFirearms.description>N/A</CGF1_MWP_Research_T5_LateIndustrialFirearms.description>
+
+  <CGF1_MWP_Research_T5_LateIndustrialEmplacements.label>後期産業時代の砲塔</CGF1_MWP_Research_T5_LateIndustrialEmplacements.label>
+  <CGF1_MWP_Research_T5_LateIndustrialEmplacements.description>N/A</CGF1_MWP_Research_T5_LateIndustrialEmplacements.description>
+
+  <CGF1_MWP_Research_T5_LateIndustrialMelee.label>後期産業時代の近接武器</CGF1_MWP_Research_T5_LateIndustrialMelee.label>
+  <CGF1_MWP_Research_T5_LateIndustrialMelee.description>N/A</CGF1_MWP_Research_T5_LateIndustrialMelee.description>
+
+  <CGF1_MWP_Research_T5_PowerTools.label>電動工具</CGF1_MWP_Research_T5_PowerTools.label>
+  <CGF1_MWP_Research_T5_PowerTools.description>N/A</CGF1_MWP_Research_T5_PowerTools.description>
+
+  <!-- Great War -->
+
+  <CGF1_MWP_Research_T6_GreatWarFirearms.label>第一次世界大戦の火器</CGF1_MWP_Research_T6_GreatWarFirearms.label>
+  <CGF1_MWP_Research_T6_GreatWarFirearms.description>N/A</CGF1_MWP_Research_T6_GreatWarFirearms.description>
+
+  <CGF1_MWP_Research_T6_GreatWarEmplacements.label>第一次世界大戦の陣地設置物</CGF1_MWP_Research_T6_GreatWarEmplacements.label>
+  <CGF1_MWP_Research_T6_GreatWarEmplacements.description>N/A</CGF1_MWP_Research_T6_GreatWarEmplacements.description>
+
+  <CGF1_MWP_Research_T6_GreatWarMelee.label>第一次世界大戦の近接武器</CGF1_MWP_Research_T6_GreatWarMelee.label>
+  <CGF1_MWP_Research_T6_GreatWarMelee.description>N/A</CGF1_MWP_Research_T6_GreatWarMelee.description>
+
+  <!-- WWII -->
+
+  <CGF1_MWP_Research_T7_WW2Firearms.label>第二次世界大戦の火器</CGF1_MWP_Research_T7_WW2Firearms.label>
+  <CGF1_MWP_Research_T7_WW2Firearms.description>N/A</CGF1_MWP_Research_T7_WW2Firearms.description>
+
+  <CGF1_MWP_Research_T7_WW2Emplacements.label>第二次世界大戦の陣地設置物</CGF1_MWP_Research_T7_WW2Emplacements.label>
+  <CGF1_MWP_Research_T7_WW2Emplacements.description>N/A</CGF1_MWP_Research_T7_WW2Emplacements.description>
+
+  <CGF1_MWP_Research_T7_WW2Melee.label>第二次世界大戦の近接武器</CGF1_MWP_Research_T7_WW2Melee.label>
+  <CGF1_MWP_Research_T7_WW2Melee.description>N/A</CGF1_MWP_Research_T7_WW2Melee.description>
+
+  <!-- Atomic Age -->
+
+  <CGF1_MWP_Research_T8_AtomicAgeFirearms.label>原子力時代の火器</CGF1_MWP_Research_T8_AtomicAgeFirearms.label>
+  <CGF1_MWP_Research_T8_AtomicAgeFirearms.description>N/A</CGF1_MWP_Research_T8_AtomicAgeFirearms.description>
+
+  <CGF1_MWP_Research_T8_AtomicAgeEmplacements.label>原子力時代の陣地設置物</CGF1_MWP_Research_T8_AtomicAgeEmplacements.label>
+  <CGF1_MWP_Research_T8_AtomicAgeEmplacements.description>N/A</CGF1_MWP_Research_T8_AtomicAgeEmplacements.description>
+
+  <CGF1_MWP_Research_T8_AtomicAgeMelee.label>原子力時代の近接武器</CGF1_MWP_Research_T8_AtomicAgeMelee.label>
+  <CGF1_MWP_Research_T8_AtomicAgeMelee.description>N/A</CGF1_MWP_Research_T8_AtomicAgeMelee.description>
+
+  <!-- Space Age -->
+
+  <CGF1_MWP_Research_T9_SpaceAgeFirearms.label>宇宙時代の火器</CGF1_MWP_Research_T9_SpaceAgeFirearms.label>
+  <CGF1_MWP_Research_T9_SpaceAgeFirearms.description>N/A</CGF1_MWP_Research_T9_SpaceAgeFirearms.description>
+
+  <CGF1_MWP_Research_T9_SpaceAgeEmplacements.label>宇宙時代の陣地設置物</CGF1_MWP_Research_T9_SpaceAgeEmplacements.label>
+  <CGF1_MWP_Research_T9_SpaceAgeEmplacements.description>N/A</CGF1_MWP_Research_T9_SpaceAgeEmplacements.description>
+
+  <CGF1_MWP_Research_T9_SpaceAgeMelee.label>宇宙時代の近接武器</CGF1_MWP_Research_T9_SpaceAgeMelee.label>
+  <CGF1_MWP_Research_T9_SpaceAgeMelee.description>N/A</CGF1_MWP_Research_T9_SpaceAgeMelee.description>
+
+  <!-- Modern -->
+
+  <CGF1_MWP_Research_T10_ModernFirearms.label>現代の火器</CGF1_MWP_Research_T10_ModernFirearms.label>
+  <CGF1_MWP_Research_T10_ModernFirearms.description>N/A</CGF1_MWP_Research_T10_ModernFirearms.description>
+
+  <CGF1_MWP_Research_T10_ModernEmplacements.label>現代の陣地設置物</CGF1_MWP_Research_T10_ModernEmplacements.label>
+  <CGF1_MWP_Research_T10_ModernEmplacements.description>N/A</CGF1_MWP_Research_T10_ModernEmplacements.description>
+
+  <CGF1_MWP_Research_T10_ModernMelee.label>現代の近接武器</CGF1_MWP_Research_T10_ModernMelee.label>
+  <CGF1_MWP_Research_T10_ModernMelee.description>N/A</CGF1_MWP_Research_T10_ModernMelee.description>
+
+</LanguageData>

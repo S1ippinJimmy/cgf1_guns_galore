@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Horaxian_Gunner"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_Horax_Gunner</li>
+						
+						<li>CGF1_Crossbow_Medieval</li>
+						<li>CGF1_Crossbow_Chinese</li>
+						<li>CGF1_Crossbow_Renaissance</li>
+						<li>CGF1_Crossbow_Modern</li>
+						<li>CGF1_Pistol_Musket_Renaissance</li>
+						<li>CGF1_Rifle_Musket_Medieval</li>
+						<li>CGF1_Rifle_Musket_Renaissance</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Horaxian_Underthrall"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Horax_Underthrall</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="Horaxian_Highthrall"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Weapon_Horax_Highthrall</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CGF1_MWP_DamageDef_Bomb_MANPADS.label>対空爆弾</CGF1_MWP_DamageDef_Bomb_MANPADS.label>
+  <CGF1_MWP_DamageDef_Bomb_MANPADS.deathMessage>{0} は爆発により死亡しました。</CGF1_MWP_DamageDef_Bomb_MANPADS.deathMessage>
+
+  <CGF1_MWP_DamageDef_Bomb_ATMissile.label>対戦車爆弾</CGF1_MWP_DamageDef_Bomb_ATMissile.label>
+  <CGF1_MWP_DamageDef_Bomb_ATMissile.deathMessage>{0} は爆発により死亡しました。</CGF1_MWP_DamageDef_Bomb_ATMissile.deathMessage>
+
+  <CGF1_MWP_DamageDef_BluntProjectile.label>投射物</CGF1_MWP_DamageDef_BluntProjectile.label>
+  <CGF1_MWP_DamageDef_BluntProjectile.deathMessage>{0} は鈍的外傷により死亡しました。</CGF1_MWP_DamageDef_BluntProjectile.deathMessage>
+
+</LanguageData>

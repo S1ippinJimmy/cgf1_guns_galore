@@ -1,0 +1,153 @@
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Disable vanilla Industrial gun spawns</label> <!-- Does not remove them from the game, just makes it so they shouldn't spawn naturally -->
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Gun_Revolver" or defName="Gun_Autopistol" or defName="Gun_MachinePistol" or defName="Gun_BoltActionRifle" or defName="Gun_PumpShotgun" or defName="Gun_ChainShotgun" or defName="Gun_HeavySMG" or defName="Gun_LMG" or defName="Gun_AssaultRifle" or defName="Gun_SniperRifle" or defName="Gun_Minigun"]</xpath>
+				<value>
+					<relicChance>0</relicChance>
+					<generateCommonality>0.0</generateCommonality>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[@Name="BaseHumanMakeableGun"]/weaponTags/li[text() = "Gun"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_Revolver"]/weaponTags/li[text() = "SimpleGun"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_Revolver"]/weaponTags/li[text() = "Revolver"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_Autopistol"]/weaponTags/li[text() = "SimpleGun"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_Autopistol"]/weaponTags/li[text() = "Autopistol"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_MachinePistol"]/weaponTags/li[text() = "ShortShots"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_PumpShotgun"]/weaponTags/li[text() = "ShortShots"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_ChainShotgun"]/weaponTags/li[text() = "IndustrialGunAdvanced"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_HeavySMG"]/weaponTags/li[text() = "IndustrialGunAdvanced"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_LMG"]/weaponTags/li[text() = "IndustrialGunAdvanced"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_AssaultRifle"]/weaponTags/li[text() = "IndustrialGunAdvanced"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_AssaultRifle"]/weaponTags/li[text() = "AssaultRifle"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_SniperRifle"]/weaponTags/li[text() = "SniperRifle"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_Minigun"]/weaponTags/li[text() = "GunHeavy"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Gun_Minigun"]/weaponTags/li[text() = "Minigun"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Disable vanilla Neolithic/Medieval melee spawns</label>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_BreachAxe" or defName="MeleeWeapon_Mace" or defName="MeleeWeapon_LongSword" or defName="MeleeWeapon_Club" or defName="MeleeWeapon_Knife" or defName="MeleeWeapon_Ikwa" or defName="MeleeWeapon_Spear"]</xpath>
+				<value>
+					<relicChance>0</relicChance>
+					<generateCommonality>0.0</generateCommonality>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Gladius"]</xpath>
+				<value>
+					<relicChance>0</relicChance>
+					<generateCommonality>0.0</generateCommonality>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]/relicChance</xpath>
+				<value>
+					<relicChance>0</relicChance>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_BreachAxe"]/weaponTags/li[text() = "NeolithicMeleeDestructive"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Mace"]/weaponTags/li[text() = "MedievalMeleeDecent"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Gladius"]/weaponTags/li[text() = "MedievalMeleeDecent"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_LongSword"]/weaponTags/li[text() = "MedievalMeleeAdvanced"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_LongSword"]/weaponTags/li[text() = "LongSword"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Club"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Knife"]/weaponTags/li[text() = "MedievalMeleeBasic"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Knife"]/weaponTags/li[text() = "NeolithicMeleeBasic"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Ikwa"]/weaponTags/li[text() = "NeolithicMeleeDecent"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Spear"]/weaponTags/li[text() = "NeolithicMeleeAdvanced"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Spear"]/weaponTags/li[text() = "MedievalMeleeAdvanced"]</xpath>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="MeleeWeapon_Spear"]/weaponTags/li[text() = "Spear"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	
+	
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<label>Use universal caliber-based damage (UNFINISHED)</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="CGF1_MWP_Bullet_6mmBB_Pistol" or defName="CGF1_MWP_Bullet_6mmBB_Auto" or defName="CGF1_MWP_Bullet_6mmBB_Rifle" or defName="CGF1_MWP_Bullet_6mmBB_Sniper" or defName="CGF1_MWP_Bullet_6mmBB_Shotgun"]/projectile/damageAmountBase</xpath>
+				<value>
+					<damageAmountBase>1</damageAmountBase>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="CGF1_MWP_Bullet_2mmKolibri_Pistol"]/projectile/damageAmountBase</xpath>
+				<value>
+					<damageAmountBase>2</damageAmountBase>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="CGF1_MWP_Bullet_177Pellet_Pistol" or defName="CGF1_MWP_Bullet_177Pellet_Auto" or defName="CGF1_MWP_Bullet_177Pellet_Rifle" or defName="CGF1_MWP_Bullet_177Pellet_Sniper"]/projectile/damageAmountBase</xpath>
+				<value>
+					<damageAmountBase>3</damageAmountBase>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/PawnKindDef[defName="CGF1_MWP_Bullet_41Rimfire_Pistol"]/projectile/damageAmountBase</xpath>
+				<value>
+					<damageAmountBase>3</damageAmountBase>
+				</value>
+			</li>
+		</operations>
+	</Operation>

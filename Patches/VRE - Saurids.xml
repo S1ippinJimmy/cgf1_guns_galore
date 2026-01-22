@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Saurid</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Saurids -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VRESaurids_Villager_Saurid" or defName="VRESaurids_TownGuard_Saurid"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VRE_SauridVillager</li>
+						
+						<li>CGF1_Pistol_Civilian</li>
+						<li>CGF1_Pistol_Improvised</li>
+						<li>CGF1_Revolver_Civilian</li>
+						<li>CGF1_Shotgun_Civilian</li>
+						<li>CGF1_Shotgun_Improvised</li>
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VRESaurids_TownCouncilman_Saurid" or defName="VRESaurids_TownTrader_Saurid"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VRE_SauridCouncilman</li>
+						
+						<li>CGF1_Pistol_Civilian</li>
+						<li>CGF1_Revolver_Civilian</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VRESaurids_MercenaryGunner_Saurid"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VRE_SauridMercenary</li>
+						
+						<li>CGF1_Pistol_Civilian</li>
+						<li>CGF1_AR_Civilian</li>
+						<li>CGF1_AR_Military</li>
+						<li>CGF1_LMG_Military</li>
+						<li>CGF1_Revolver_Civilian</li>
+						<li>CGF1_Revolver_Military</li>
+						<li>CGF1_Shotgun_Civilian</li>
+						<li>CGF1_Shotgun_Military</li>
+						<li>CGF1_SMG_Civilian</li>
+						<li>CGF1_SMG_Improvised</li>
+						<li>CGF1_SMG_Military</li>
+					</value>
+				</li>			
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VRESaurids_MercenaryElite_Saurid"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VRE_SauridMercenaryElite</li>
+						
+						<li>CGF1_Revolver_Military</li>
+						<li>CGF1_Revolver_Military_Advanced</li>
+						<li>CGF1_Pistol_Military_Advanced</li>
+						<li>CGF1_Pistol_Military_SpecOps</li>
+						<li>CGF1_AR_Military</li>
+						<li>CGF1_LMG_Military</li>
+						<li>CGF1_Shotgun_Military</li>
+						<li>CGF1_Shotgun_Military_Advanced</li>
+						<li>CGF1_SMG_Military</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+						<li>CGF1_SMG_Military_SpecOps</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	  
+	  <ThingCategoryDef>
+        <defName>CGF1_MWP_ThingCategory_GunsGalore</defName>
+        <label>Guns Galore</label>
+        <parent>WeaponsRanged</parent>
+      </ThingCategoryDef>
+
+	  <ThingCategoryDef>
+        <defName>CGF1_MWP_ThingCategory_Grenades</defName>
+        <label>Grenades</label>
+        <parent>CGF1_MWP_ThingCategory_GunsGalore</parent>
+      </ThingCategoryDef>
+
+</Defs>

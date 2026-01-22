@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Pirates</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Junkers -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEP_Scrapper"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFEP_Scrapper</li>
+						
+						<li>CGF1_AR_Improvised</li>
+						<li>CGF1_AR_Military</li>
+						<li>CGF1_GL_Improvised</li>
+						<li>CGF1_GL_RifleGrenade</li>
+						<li>CGF1_Rifle_Improvised</li>
+						<li>CGF1_Rifle_Marksman</li>
+						<li>CGF1_Rifle_Military</li>
+						<li>CGF1_Shotgun_Improvised</li>
+						<li>CGF1_Shotgun_Military</li>
+						<li>CGF1_SMG_Civilian</li>
+						<li>CGF1_SMG_Improvised</li>
+						<li>CGF1_SMG_Military</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEP_Footsoldier"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFEP_WC_Footsoldier</li>
+						
+						<li>CGF1_HMG_Military</li>
+						<li>CGF1_HMG_Military_Advanced</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEP_Veteran"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFEP_WC_Veteran</li>
+						
+						<li>CGF1_HMG_Military_Advanced</li>
+					</value>
+				</li>
+				<!--<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEP_HeavyWeaponsPlatform" or defName="VFEP_Artillery"]/weaponTags</xpath>
+					<value>
+						<li></li>
+					</value>
+				</li>-->	
+				
+				<!-- Mercenaries -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEP_Private"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFEP_Private</li>
+						
+						<li>CGF1_AR_Military</li>
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_LMG_Military</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_Rifle_Military</li>
+						<li>CGF1_Rifle_Military_Advanced</li>
+						<li>CGF1_Rifle_Marksman_Advanced</li>
+						<li>CGF1_Shotgun_Military_Advanced</li>
+						<li>CGF1_SMG_Military</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEP_Corporal" or defName="VFEP_Sergeant"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFEP_Corporal</li>
+						
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_AR_Military_SpecOps</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_LMG_Military_SpecOps</li>
+						<li>CGF1_Rifle_Marksman_Advanced</li>
+						<li>CGF1_Rifle_Marksman_SpecOps</li>
+						<li>CGF1_Rifle_Military_Advanced</li>
+						<li>CGF1_Rifle_Military_SpecOps</li>
+						<li>CGF1_Shotgun_Military_Advanced</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+						<li>CGF1_SMG_Military_SpecOps</li>
+						<li>CGF1_SniperRifle_Advanced</li>
+						<li>CGF1_SniperRifle_SpecOps</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEP_SergeantMajor" or defName="VFEP_Lieutenant"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFEP_Lieutenant</li>
+						
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_GL_Military_Advanced</li>
+						<li>CGF1_Launcher_Military_Advanced</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_SniperRifle_Advanced</li>
+						<li MayRequire="MYDE.AerocraftFramework">CGF1_MANPADS_Military_Advanced</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEP_Captain"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFEP_WC_Captain</li>
+						
+						<li>CGF1_Launcher_Military_Advanced</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_HMG_Military</li>
+						<li>CGF1_HMG_Military_Advanced</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEP_Major" or defName="VFEP_General"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_VFEP_WC_General</li>
+						
+						<li>CGF1_HMG_Military_Advanced</li>
+					</value>
+				</li>
+				
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

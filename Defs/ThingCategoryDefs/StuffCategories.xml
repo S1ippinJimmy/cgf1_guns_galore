@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+		<StuffCategoryDef>
+			<defName>CGF1_StuffCategory_Stony_NJ</defName>
+			<label>stony (no jade)</label>
+		</StuffCategoryDef>
+		
+		<StuffCategoryDef>
+			<defName>CGF1_StuffCategory_Jade</defName>
+			<label>jade</label>
+		</StuffCategoryDef>
+
+</Defs>

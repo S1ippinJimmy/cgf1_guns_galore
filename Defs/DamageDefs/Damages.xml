@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<DamageDef>
+		<defName>CGF1_MWP_DamageDef_Bomb_MANPADS</defName>
+		<label>AA bomb</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>50</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>100</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>100</buildingDamageFactorPassable>
+		<plantDamageFactor>0.5</plantDamageFactor>
+		<corpseDamageFactor>0.1</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	 </DamageDef>
+	 
+	 <DamageDef>
+		<defName>CGF1_MWP_DamageDef_Bomb_ATMissile</defName>
+		<label>AT bomb</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has died in an explosion.</deathMessage>
+		<hediff>Shredded</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<minDamageToFragment>5</minDamageToFragment>
+		<defaultDamage>800</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>100</defaultArmorPenetration>
+		<buildingDamageFactorImpassable>4</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+		<plantDamageFactor>4</plantDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+		<explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+		<soundExplosion>Explosion_Bomb</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	  </DamageDef>
+	  
+	   <DamageDef>
+			<defName>CGF1_MWP_DamageDef_BluntProjectile</defName>
+			<label>projectile</label>
+			<workerClass>DamageWorker_AddInjury</workerClass>
+			<externalViolence>true</externalViolence>
+			<deathMessage>{0} has died of blunt trauma.</deathMessage>
+			<hediff>Crush</hediff>
+			<hediffSkin>Bruise</hediffSkin>
+			<hediffSolid>Crack</hediffSolid>
+			<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+			<impactSoundType>Bullet</impactSoundType>
+			<armorCategory>Sharp</armorCategory>
+			<overkillPctToDestroyPart>0.5~1</overkillPctToDestroyPart>
+			<isRanged>true</isRanged>
+			<makesAnimalsFlee>true</makesAnimalsFlee>
+		 </DamageDef>
+</Defs>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Vikings</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEV_Viking_Peasant"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Knife_Viking</li>
+						<li>CGF1_Tool_Cooking_Medieval</li>
+						<li>CGF1_Tool_Construction_Medieval</li>
+						<li>CGF1_Tool_Crafting_Medieval</li>
+						<li>CGF1_Tool_Farming_Medieval</li>
+						<li>CGF1_Tool_Mining_Medieval</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEV_Viking_Merchant"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Knife_Viking</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEV_Viking_Slaver"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Knife_Viking</li>
+						<li>CGF1_Axe_Viking</li>
+						<li>CGF1_Sword_Viking</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEV_Raider" or defName="VFEV_Guardian"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Axe_Viking</li>
+						<li>CGF1_Axe_Viking_Great</li>
+						<li>CGF1_Sword_Viking</li>
+						<li>CGF1_Spear_Viking</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEV_Ravager"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Axe_Viking</li>
+						<li>CGF1_Axe_Viking_Great</li>
+						<li>CGF1_Spear_Viking</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEV_Berserker"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Axe_Viking</li>
+						<li>CGF1_Axe_Viking_Great</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEV_Shieldbearer"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Axe_Viking</li>
+						<li>CGF1_Sword_Viking</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEV_ShieldedRavager"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Axe_Viking</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEV_HousecarlMelee"]/weaponTags</xpath>
+					<value>
+						<li>CGF1_Axe_Viking</li>
+						<li>CGF1_Axe_Viking_Great</li>
+						<li>CGF1_Bludgeon_Medieval</li>
+						<li>CGF1_Sword_Medieval</li>
+						<li>CGF1_Sword_Viking</li>
+						<li>CGF1_Spear_Viking</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

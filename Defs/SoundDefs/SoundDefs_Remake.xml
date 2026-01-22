@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Pistol1</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Pistol1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Pistol2</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Pistol2</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Pistol3</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Pistol3</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Pistol4</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Pistol4</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Pistol5</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Pistol5</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Pistol6</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Pistol6</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Rifle Caliber -->
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Rifle1</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Rifle1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Rifle2</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Rifle2</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Rifle3</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Rifle3</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Rifle4</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Rifle4</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Rifle5</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Rifle5</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Rifle_Heavy1</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Rifle_Heavy1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>1</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Rifle_SD1</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Rifle_SD1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Shotgun1</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Shotgun1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Vehicle -->
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_30mm_Autocannon_1</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/30mm_Autocannon_1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_30mm_Autocannon_2</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/30mm_Autocannon_2</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_37mm_Cannon_1</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/37mm_Cannon_1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_37mm_Cannon_2</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/37mm_Cannon_2</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_50mm_Cannon</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/50mm_Cannon</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_57mm_Cannon_1</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/57mm_Cannon_1</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_57mm_Cannon_2</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/57mm_Cannon_2</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_76mm_Cannon</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/76mm_Cannon</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_81mm_Mortar</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/81mm_Mortar</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>70</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_84mm_Cannon</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/84mm_Cannon</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_90mm_Cannon</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/90mm_Cannon</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_105mm_Cannon</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/105mm_Cannon</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_120mm_Cannon</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/120mm_Cannon</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_130mm_Cannon</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Vehicle/130mm_Cannon</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>50</volumeRange>    
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

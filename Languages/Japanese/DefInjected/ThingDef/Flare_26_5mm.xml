@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <ThingDef ParentName="BaseBullet">
+		<defName>CGF1_MWP_Bullet_265mm_Flare</defName>
+		<label>26.5mm Flare (Smoke)</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/30x29mm</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Smoke</damageDef>
+			<explosionRadius>2.4</explosionRadius>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<speed>50</speed>
+			<arcHeightFactor>0.7</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+			<screenShakeFactor>0.5</screenShakeFactor>
+		</projectile>
+	</ThingDef> -->
+
+  <CGF1_MWP_Bullet_265mm_Flare.label>26.5mm Flare</CGF1_MWP_Bullet_265mm_Flare.label>
+  <CGF1_265mm_Flare.label>26.5mm Flare</CGF1_265mm_Flare.label>
+
+
+</LanguageData>

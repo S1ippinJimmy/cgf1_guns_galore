@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Ancients</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Ancient Soldiers -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/PawnKindDef[defName="VFEA_AncientSoldierOneAbility" or defName="VFEA_AncientSoldierTwoAbilities" or defName="VFEA_PlayerAncientSoldierOneAbility"]/weaponTags</xpath>
+					<value>
+						<!-- --><li>CGF1_Weapon_AncientSoldier</li>
+						
+						<li>CGF1_AR_Military_Advanced</li>
+						<li>CGF1_AR_Military_SpecOps</li>
+						<li>CGF1_GL_Military_Advanced</li>
+						<li>CGF1_LMG_Military_Advanced</li>
+						<li>CGF1_LMG_Military_SpecOps</li>
+						<li>CGF1_Revolver_Military_Advanced</li>
+						<li>CGF1_Pistol_Military_Advanced</li>
+						<li>CGF1_Pistol_Military_SpecOps</li>
+						<li>CGF1_Rifle_Marksman_Advanced</li>
+						<li>CGF1_Rifle_Marksman_SpecOps</li>
+						<li>CGF1_Rifle_Military_Advanced</li>
+						<li>CGF1_Rifle_Military_SpecOps</li>
+						<li>CGF1_Shotgun_Military_Advanced</li>
+						<li>CGF1_SMG_Military_Advanced</li>
+						<li>CGF1_SMG_Military_SpecOps</li>
+						<li>CGF1_SniperRifle_Advanced</li>
+						<li>CGF1_SniperRifle_SpecOps</li>
+						<li>CGF1_Special_Prototype</li>
+						<li>CGF1_Special_Unique</li>
+						<li>CGF1_MANPADS_Military</li>
+						<li>CGF1_MANPADS_Military_Advanced</li>
+					</value>
+				</li>		
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

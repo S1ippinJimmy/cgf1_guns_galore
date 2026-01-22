@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- B:5, S:235 -->
+	
+	
+	
+	<ThingDef Name="CGF1_MWP_BaseUnmakeableMeleeWeapon" ParentName="BaseWeapon" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<!--<relicChance>0.0</relicChance>-->
+		<!--<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>-->
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseUnmakeableMeleeWeapon_Quality" ParentName="BaseWeapon" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<!--<relicChance>0.0</relicChance>-->
+		<!--<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>-->
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseMakeableMeleeWeapon" ParentName="BaseWeapon" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>			
+		</graphicData>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<!--<relicChance>0.0</relicChance>-->
+		<!--<tradeTags>
+			<li>WeaponMelee</li>
+		</tradeTags>-->
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Smith</soundWorking>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories>
+			<li>WeaponsMelee</li>
+		</thingCategories>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseMakeableMeleeWeapon_Quality" ParentName="CGF1_MWP_BaseMakeableMeleeWeapon" Abstract="True">
+		 <comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>NamerArtWeaponMelee</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+		<thingSetMakerTags><li>CGF1_GunsGalore_RewardCommonSuper</li></thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef Name="CGF1_MWP_BaseMakeableMeleeWeapon_Quality_NoArt" ParentName="CGF1_MWP_BaseMakeableMeleeWeapon" Abstract="True">
+		 <comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CGF1_MWP_Dropdown_RWS.label>RWS</CGF1_MWP_Dropdown_RWS.label>
+  <CGF1_MWP_Dropdown_MRWS.label>MRWS</CGF1_MWP_Dropdown_MRWS.label>
+  <CGF1_MWP_Dropdown_Becker.label>ベッカー M2</CGF1_MWP_Dropdown_Becker.label>
+  <CGF1_MWP_Dropdown_Bren.label>ブレンガン</CGF1_MWP_Dropdown_Bren.label>
+  <CGF1_MWP_Dropdown_DP28.label>DP-28</CGF1_MWP_Dropdown_DP28.label>
+  <CGF1_MWP_Dropdown_DreyseMG15.label>ドレイゼ MG15</CGF1_MWP_Dropdown_DreyseMG15.label>
+  <CGF1_MWP_Dropdown_DShK.label>DShK</CGF1_MWP_Dropdown_DShK.label>
+  <CGF1_MWP_Dropdown_FNMAG.label>FN MAG</CGF1_MWP_Dropdown_FNMAG.label>
+  <CGF1_MWP_Dropdown_FNMinimi.label>FN ミニミ</CGF1_MWP_Dropdown_FNMinimi.label>
+  <CGF1_MWP_Dropdown_Gatling.label>ガトリングガン</CGF1_MWP_Dropdown_Gatling.label>
+  <CGF1_MWP_Dropdown_GAU19.label>GAU-19</CGF1_MWP_Dropdown_GAU19.label>
+  <CGF1_MWP_Dropdown_HK21.label>HK21</CGF1_MWP_Dropdown_HK21.label>
+  <CGF1_MWP_Dropdown_L6WOMBAT.label>L6 ウォンバット</CGF1_MWP_Dropdown_L6WOMBAT.label>
+  <CGF1_MWP_Dropdown_M134.label>M134</CGF1_MWP_Dropdown_M134.label>
+  <CGF1_MWP_Dropdown_M1917.label>M1917</CGF1_MWP_Dropdown_M1917.label>
+  <CGF1_MWP_Dropdown_M1919.label>M1919</CGF1_MWP_Dropdown_M1919.label>
+  <CGF1_MWP_Dropdown_M2.label>M2</CGF1_MWP_Dropdown_M2.label>
+  <CGF1_MWP_Dropdown_M40.label>M40 無反動砲</CGF1_MWP_Dropdown_M40.label>
+  <CGF1_MWP_Dropdown_M60.label>M60 無反動砲</CGF1_MWP_Dropdown_M60.label>
+  <CGF1_MWP_Dropdown_Maxim.label>マキシム</CGF1_MWP_Dropdown_Maxim.label>
+  <CGF1_MWP_Dropdown_MG42.label>MG-42</CGF1_MWP_Dropdown_MG42.label>
+  <CGF1_MWP_Dropdown_Mk19.label>Mk.19</CGF1_MWP_Dropdown_Mk19.label>
+  <CGF1_MWP_Dropdown_Parabellum_MG14.label>パラベルム MG14</CGF1_MWP_Dropdown_Parabellum_MG14.label>
+  <CGF1_MWP_Dropdown_PK.label>PK</CGF1_MWP_Dropdown_PK.label>
+  <CGF1_MWP_Dropdown_RPD.label>RPD</CGF1_MWP_Dropdown_RPD.label>
+  <CGF1_MWP_Dropdown_Schwarzlose.label>シュワルツローゼ</CGF1_MWP_Dropdown_Schwarzlose.label>
+  <CGF1_MWP_Dropdown_Skoda.label>シュコダ</CGF1_MWP_Dropdown_Skoda.label>
+  <CGF1_MWP_Dropdown_TOW.label>TOW</CGF1_MWP_Dropdown_TOW.label>
+  <CGF1_MWP_Dropdown_Type77.label>タイプ77</CGF1_MWP_Dropdown_Type77.label>
+
+</LanguageData>
