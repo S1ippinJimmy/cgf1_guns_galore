@@ -77,6 +77,17 @@
 	</Vehicles.VehicleTurretDef>
 	
 	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M1919A4_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_M1919A4_Medium_</defName>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/M1919A4_Medium</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.625, 1.625)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M1919A4_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_M1919A4_Small_</defName>
 
 		<graphicData>
