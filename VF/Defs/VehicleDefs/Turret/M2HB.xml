@@ -78,6 +78,8 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M2HB_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_M2HB_Medium_</defName>
+		
+		<projectileOffset>1</projectileOffset>
 
 		<graphicData>
 			<texPath>CGF1/Vehicle/Turret/M2HB_Medium</texPath>
@@ -89,6 +91,8 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M2HB_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_M2HB_Small_</defName>
+		
+		<projectileOffset>1</projectileOffset>
 
 		<graphicData>
 			<texPath>CGF1/Vehicle/Turret/M2HB_Small</texPath>

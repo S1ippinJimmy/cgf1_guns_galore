@@ -78,6 +78,8 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M1919A4_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_M1919A4_Medium_</defName>
+		
+		<projectileOffset>1</projectileOffset>
 
 		<graphicData>
 			<texPath>CGF1/Vehicle/Turret/M1919A4_Medium</texPath>
@@ -89,6 +91,8 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M1919A4_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_M1919A4_Small_</defName>
+		
+		<projectileOffset>1</projectileOffset>
 
 		<graphicData>
 			<texPath>CGF1/Vehicle/Turret/M1919A4_Small</texPath>
