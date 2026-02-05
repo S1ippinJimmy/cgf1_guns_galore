@@ -211,7 +211,7 @@
 												  <li>MealSurvivalPack</li>
 												</thingDefs>
 											  </filter>
-											  <countRange>3~18</countRange>
+											  <countRange>3~20</countRange>
 											</fixedParams>
 										  </thingSetMaker>
 										</li>
@@ -266,8 +266,13 @@
 												  <li>TextBook</li>
 												  <li>Schematic</li>
 												  <li>Novel</li>
+												  <li>ReinforcedBarrel</li>
 												  <li>PsychicAnimalPulser</li>
 												  <li>PsychicSoothePulser</li>
+												  <li>Shell_AntigrainWarhead</li>
+												  <li>Apparel_PsychicShockLance</li>
+												  <li>Apparel_PsychicInsanityLance</li>
+												  <li>SculptureGrand</li>
 												  <li MayRequire="Ludeon.RimWorld.Royalty">ArmorskinGland</li>
 												  <!--<li MayRequire="Ludeon.RimWorld.Royalty">CircadianAssistant</li>
 												  <li MayRequire="Ludeon.RimWorld.Royalty">CircadianHalfCycler</li>-->
@@ -282,7 +287,7 @@
 												  <li MayRequire="Ludeon.RimWorld.Royalty">ReprocessorStomach</li>
 												  <li MayRequire="Ludeon.RimWorld.Royalty">StoneskinGland</li>
 												  <li MayRequire="Ludeon.RimWorld.Royalty">ToughskinGland</li>
-												  <!--<li MayRequire="Ludeon.RimWorld.Royalty">BroadshieldCore</li>-->
+												  <li MayRequire="Ludeon.RimWorld.Royalty">BroadshieldCore</li>
 												  <li MayRequire="Ludeon.RimWorld.Royalty">OrbitalTargeterMechCluster</li>
 												  <li MayRequire="Ludeon.RimWorld.Royalty">MeleeWeapon_PsyfocusStaff</li>
 												  <li MayRequire="Ludeon.RimWorld.Royalty">MeleeWeapon_MonoSwordBladelink</li>
@@ -292,7 +297,14 @@
 												  <li MayRequire="Ludeon.RimWorld.Biotech">SubcoreHigh</li>
 												  <li MayRequire="Ludeon.RimWorld.Biotech">DetoxifierKidney</li>
 												  <li MayRequire="Ludeon.RimWorld.Biotech">DetoxifierLung</li>
-												  <!--<li MayRequire="Ludeon.RimWorld.Anomaly">Tome</li>-->
+												  <!--<li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_BiomutationLance</li>
+												  <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_ShardPsychicInsanityLance</li>
+												  <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_ShardPsychicShockLance</li>
+												  <li MayRequire="Ludeon.RimWorld.Anomaly">ShardAnimalPulser</li>
+												  <li MayRequire="Ludeon.RimWorld.Anomaly">BiomutationPulser</li>
+												  <li MayRequire="Ludeon.RimWorld.Anomaly">Tome</li>-->
+												  <li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
+												  <li MayRequire="Ludeon.RimWorld.Odyssey">SentienceCatalyst</li>
 												  <li MayRequire="OskarPotocki.VFE.Empire">VFEE_MeleeWeapon_ToxbladeBladelink</li>
 												  <li MayRequire="OskarPotocki.VFE.Deserters">VFED_Biodecoder</li>
 												  <li MayRequire="OskarPotocki.VFE.Deserters">VFED_PsychicAmplifier</li>
@@ -303,7 +315,7 @@
 												  <li>NeurotrainersPsycast</li>
 												</thingSetMakerTagsToAllow>
 											  </filter>
-											  <countRange>2~6</countRange>
+											  <countRange>2~8</countRange>
 											</fixedParams>
 										  </thingSetMaker>
 										</li>
@@ -315,17 +327,39 @@
 											  <qualityGenerator>Reward</qualityGenerator>
 											  <filter>
 												<thingDefs>
+												  <li>Apparel_AdvancedHelmet</li>
+												  <li>Apparel_PowerArmorHelmet</li>
+												  <li>Apparel_SmokepopBelt</li>
+												  <li>Apparel_FirefoampopPack</li>
+												  <li>Apparel_FlakJacket</li>
+												  <li>Apparel_FlakVest</li>
+												  <li>Apparel_PowerArmor</li>
+												  <li>Apparel_ArmorRecon</li>
+												  <li>Apparel_PlateArmor</li>
 												  <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_Gunlink</li>
+												  <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_DeadlifePack</li>
+												  <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_DisruptorFlarePack</li>
+												  <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_PackTurret</li>
+												  <li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_PackHunter</li>
+												  <!--<li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_Vacsuit</li>
+												  <li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_VacsuitHelmet</li>-->
 												  <li MayRequire="VanillaExpanded.VAEAccessories">VAEA_Apparel_AmmoPack</li>
 												  <li MayRequire="VanillaExpanded.VAEAccessories">VAEA_Apparel_MedicBag</li>
+												  <li MayRequire="VanillaExpanded.VARME">VAE_Apparel_Chestplate</li>
+												  <li MayRequire="VanillaExpanded.VARME">VAE_Apparel_GhillieSuit</li>
+												  <li MayRequire="VanillaExpanded.VARME">VAE_Apparel_RiotArmor</li>
+												  <li MayRequire="VanillaExpanded.VARME">VAE_Apparel_RiotHelmet</li>
+												  <li MayRequire="VanillaExpanded.VARME">VAE_Apparel_Shield_Riot</li>
+												  <li MayRequire="VanillaExpanded.VARME">VAE_Handwear_MarineGloves</li>
+												  <li MayRequire="VanillaExpanded.VARME">VAE_Footwear_MarineBoots</li>
 												</thingDefs>
 											  </filter>
-											  <countRange>0~3</countRange>
+											  <countRange>0~7</countRange>
 											</fixedParams>
 										  </thingSetMaker>
 										</li>
 										<li>
-										  <chance>1</chance>
+										  <chance>0.7</chance>
 										  <thingSetMaker Class="ThingSetMaker_StackCount">
 											<fixedParams>
 											  <filter>
@@ -333,7 +367,7 @@
 												  <li>Luciferium</li>
 												</thingDefs>
 											  </filter>
-											  <countRange>5~42</countRange>
+											  <countRange>5~46</countRange>
 											</fixedParams>
 										  </thingSetMaker>
 										</li>
@@ -350,18 +384,30 @@
 											</fixedParams>
 										  </thingSetMaker>
 										</li>
-										<li MayRequire="OskarPotocki.VFE.Mechanoid">
-										  <chance>0.25</chance>
+										<li>
+										  <chance>0.5</chance>
 										  <thingSetMaker Class="ThingSetMaker_StackCount">
 											<fixedParams>
 											  <filter>
 												<thingDefs>
-												  <li>VFE_ComponentMechanoid</li>
+												  <li>Neutroamine</li>
 												</thingDefs>
 											  </filter>
-											  <countRange>8~45</countRange>
+											  <countRange>15~150</countRange>
 											</fixedParams>
 										  </thingSetMaker>
+										</li>
+										
+										<!-- Techprints -->
+										
+										<li>
+											<chance>0.5</chance>
+											<thingSetMaker Class="ThingSetMaker_Techprints">
+												<weightAccordingToPlayerNeeds>false</weightAccordingToPlayerNeeds>
+												<fixedParams>
+													<countRange>1</countRange>
+												</fixedParams>
+											</thingSetMaker>
 										</li>
 										
 										<!-- Corpses -->
@@ -371,7 +417,7 @@
 										  <thingSetMaker Class="ThingSetMaker_Pawn">
 											<pawnKind>CGF1_MWP_AncientSoldier</pawnKind>
 											<alive>false</alive>
-											<corpseAgeRangeDays>200~300</corpseAgeRangeDays>
+											<corpseAgeRangeDays>11000~12000</corpseAgeRangeDays>
 										  </thingSetMaker>
 										</li>
 										<li>
@@ -379,7 +425,7 @@
 										  <thingSetMaker Class="ThingSetMaker_Pawn">
 											<pawnKind>CGF1_MWP_AncientSoldier</pawnKind>
 											<alive>false</alive>
-											<corpseAgeRangeDays>200~300</corpseAgeRangeDays>
+											<corpseAgeRangeDays>11000~12000</corpseAgeRangeDays>
 										  </thingSetMaker>
 										</li>
 										<li>
@@ -387,7 +433,7 @@
 										  <thingSetMaker Class="ThingSetMaker_Pawn">
 											<pawnKind>CGF1_MWP_AncientSoldier</pawnKind>
 											<alive>false</alive>
-											<corpseAgeRangeDays>200~300</corpseAgeRangeDays>
+											<corpseAgeRangeDays>11000~12000</corpseAgeRangeDays>
 										  </thingSetMaker>
 										</li>
 								</options>

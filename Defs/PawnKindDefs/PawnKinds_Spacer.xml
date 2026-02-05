@@ -41,6 +41,19 @@
 			<li>CGF1_Revolver_Military_Advanced</li>
 			<li>CGF1_Pistol_Military_Advanced</li>
 		</weaponTags>
+		<inventoryOptions>
+			<skipChance>0.05</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1~6</countRange>
+				</li>
+				<li>
+					<thingDef>MealSurvivalPack</thingDef>
+					<countRange>1~4</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
 		<forceWeaponQuality>Excellent</forceWeaponQuality>
 		<techHediffsMoney>2000~3000</techHediffsMoney>
 		<techHediffsTags>
