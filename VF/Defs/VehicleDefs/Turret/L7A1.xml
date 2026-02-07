@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_L7A1_" ParentName="VehicleTurretBase">
-		<defName>CGF1_MWP_Vehicle_TurretGun_L7A1_</defName>
-		<label>L7A1</label>
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_FNMAG58_" ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_FNMAG58_</defName>
+		<label>FN MAG 58</label>
 		<description>7.62mm GPMG. Requires steel to refurbish its barrel after heavy use.</description>
 		
 		<turretType>Rotatable</turretType>
@@ -75,8 +75,25 @@
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
 	
-	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_L7A1_">
-		<defName>CGF1_MWP_Vehicle_TurretGun_L7A1_Small_</defName>
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_C6_</defName>
+		<label>C6</label>
+		
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/C6</gizmoIconTexPath>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/L7A1</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_C6_Small_</defName>
+		<label>C6</label>
+		
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/C6</gizmoIconTexPath>
 
 		<graphicData>
 			<texPath>CGF1/Vehicle/Turret/L7A1_Small</texPath>
@@ -86,8 +103,76 @@
 		</graphicData>
 	</Vehicles.VehicleTurretDef>
 	
-	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_L7A1_">
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_L7A1_</defName>
+		<label>L7A1</label>
+		
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/L7A1</gizmoIconTexPath>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/L7A1</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_L7A1_Small_</defName>
+		<label>L7A1</label>
+		
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/L7A1</gizmoIconTexPath>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/L7A1_Small</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(2.7, 2.7)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	
+	<!-- Coaxial -->
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_FNMAG6040_Coaxial_</defName>
+		<label>FN MAG 60.40</label>
+		
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/FN_MAG_60_40</gizmoIconTexPath>
+		
+		<autoSnapTargeting>true</autoSnapTargeting>
+		<projectileOffset>0.7</projectileOffset>
+
+		<graphicData>
+			<!--<texPath>CGF1/Vehicle/Turret/L7A1_Small</texPath>-->
+			<texPath>CGF1/null</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_C6_Coaxial_</defName>
+		<label>C6</label>
+		
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/FN_MAG_60_40</gizmoIconTexPath>
+		
+		<autoSnapTargeting>true</autoSnapTargeting>
+		<projectileOffset>0.7</projectileOffset>
+
+		<graphicData>
+			<!--<texPath>CGF1/Vehicle/Turret/L7A1_Small</texPath>-->
+			<texPath>CGF1/null</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_L8A1_Coaxial_</defName>
+		<label>L8A1</label>
 		
 		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/L8A1</gizmoIconTexPath>
 		
@@ -103,8 +188,9 @@
 		</graphicData>
 	</Vehicles.VehicleTurretDef>
 	
-	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_L7A1_">
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_L37A1_Coaxial_</defName>
+		<label>L37A1</label>
 		
 		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/L37A1</gizmoIconTexPath>
 		
@@ -120,8 +206,9 @@
 		</graphicData>
 	</Vehicles.VehicleTurretDef>
 	
-	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_L7A1_">
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_L43A1_RangingGun_Coaxial_</defName>
+		<label>L43A1 Ranging Gun</label>
 		
 		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/L43A1_RangingGun</gizmoIconTexPath>
 		
