@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_FNMinimi_" ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_FNMinimi_</defName>
+		<label>FN Minimi</label>
+		<description>5.56MM LMG. Requires steel to refurbish its barrel after heavy use.</description>
+		
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_MWP_SFX_MG_Light7</shotSound>
+		<!--<reloadSound>VVE_BulldogReloadSound</reloadSound>-->
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/FN_Minimi</gizmoIconTexPath>
+		
+		<projectile>CGF1_MWP_Bullet_556x45mmNATO_Auto</projectile>
+		<reloadTimer>2.4</reloadTimer>
+		<warmUpTimer>1.4</warmUpTimer>
+		
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		
+		<magazineCapacity>200</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2</rotationSpeed>
+		
+		<projectileOffset>1</projectileOffset>
+		
+		<maxRange>30.9</maxRange>
+		
+		<recoil>
+			<distanceTotal>0.10</distanceTotal>
+			<distancePerTick>0.04</distancePerTick>
+			<speedMultiplierPostRecoil>0.15</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>12</shotsPerBurst>
+				<ticksBetweenShots>5</ticksBetweenShots>
+				<ticksBetweenBursts>72</ticksBetweenBursts>
+				<spreadRadius>1.9</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.30</accuracyTouch>
+				<accuracyShort>0.70</accuracyShort>
+				<accuracyMedium>0.64</accuracyMedium>
+				<accuracyLong>0.48</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>20</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/M249_SAW</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMinimi_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_M249SAW_</defName>
+		<label>M249 SAW</label>
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/M249_SAW</gizmoIconTexPath>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/M249_SAW</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMinimi_" MayRequire="cgf1.gunsgalore.coldwar.commonwealth">
+		<defName>CGF1_MWP_Vehicle_TurretGun_C9_</defName>
+		<label>C9</label>
+		<gizmoIconTexPath>CGF1/Gun/C9</gizmoIconTexPath>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/M249_SAW</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMinimi_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_C9_Small_</defName>
+		<label>C9</label>
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/M249_SAW</gizmoIconTexPath>
+		
+		<projectileOffset>3</projectileOffset>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/M249_SAW_Small</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(2.5, 2.5)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+</Defs>
