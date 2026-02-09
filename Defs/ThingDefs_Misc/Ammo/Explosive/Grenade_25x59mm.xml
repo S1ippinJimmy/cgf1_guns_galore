@@ -17,6 +17,7 @@
 			<speed>50</speed>
 			<arcHeightFactor>0.7</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
+			<stoppingPower>4</stoppingPower>
 		</projectile>
 	</ThingDef>
 	
@@ -36,6 +37,7 @@
 			<speed>93</speed>
 			<arcHeightFactor>0.7</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
+			<stoppingPower>5</stoppingPower>
 		</projectile>
 	</ThingDef>
 	

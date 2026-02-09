@@ -101,4 +101,18 @@
 			<drawSize>(3.4, 3.4)</drawSize>
 		</graphicData>
 	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M2HB_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_M2HB_Coaxial_</defName>
+
+		<autoSnapTargeting>true</autoSnapTargeting>
+		<projectileOffset>0.7</projectileOffset>
+
+		<graphicData>
+			<texPath>CGF1/null</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
 </Defs>

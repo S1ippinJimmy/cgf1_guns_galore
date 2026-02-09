@@ -12,9 +12,10 @@
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>120</damageAmountBase>
+			<damageAmountBase>190</damageAmountBase>
 			<explosionRadius>3.9</explosionRadius>
 			<speed>60</speed>
+			<stoppingPower>11.5</stoppingPower>
 		</projectile>
 	</ThingDef>
 	

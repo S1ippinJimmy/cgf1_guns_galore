@@ -78,4 +78,108 @@
 			<li>0.22</li>
 		</projectileShifting>
 	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre">
+		<defName>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_MAG</defName>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/CadillacGage1Metre_MAG</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.9, 2.9)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre">
+		<defName>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_Mk19</defName>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/CadillacGage1Metre_Mk19</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.9, 2.9)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre">
+		<defName>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_TwinM2HB</defName>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/CadillacGage1Metre_TwinM2HB</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.9, 2.9)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_TwinM1919" ParentName="CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre">
+		<defName>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_TwinM1919</defName>
+		<label>M1919A4</label>
+		<description>.30-06 MMG. Requires steel to refurbish its barrel after heavy use.</description>
+		
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_MWP_SFX_MG_Light6</shotSound>
+		<!--<reloadSound>VVE_BulldogReloadSound</reloadSound>-->
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/Browning_M1919A4</gizmoIconTexPath>
+		
+		<projectile>CGF1_MWP_Bullet_3006Springfield_Auto</projectile>
+		<reloadTimer>2.4</reloadTimer>
+		<warmUpTimer>1.6</warmUpTimer>
+		
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		
+		<magazineCapacity>250</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<projectileOffset>1.5</projectileOffset>
+		
+		<maxRange>36.9</maxRange>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>14</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>75</ticksBetweenBursts>
+				<spreadRadius>1.8</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.40</accuracyTouch>
+				<accuracyShort>0.60</accuracyShort>
+				<accuracyMedium>0.60</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>20</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/CadillacGage1Metre_TwinM1919</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.9, 2.9)</drawSize>
+		</graphicData>
+		
+		<projectileShifting>
+			<li>0.29</li>
+		</projectileShifting>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_TwinM1919">
+		<defName>CGF1_MWP_Vehicle_TurretGun_CadillacGage1Metre_TwinM1919_C5A1</defName>
+		<label>C5A1</label>
+		<description>7.62mm MMG. Requires steel to refurbish its barrel after heavy use.</description>
+		
+		<projectile>CGF1_MWP_Bullet_762x51mmNATO_Auto</projectile>
+	</Vehicles.VehicleTurretDef>
 </Defs>

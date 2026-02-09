@@ -13,8 +13,10 @@
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<damageDef>CGF1_MWP_DamageDef_Bomb_ATMissile</damageDef>
-			<explosionRadius>1.9</explosionRadius>
+			<damageAmountBase>195</damageAmountBase>
+			<explosionRadius>2.9</explosionRadius>
 			<speed>65</speed>
+			<stoppingPower>11.5</stoppingPower>
 		</projectile>
 	</ThingDef>
 	

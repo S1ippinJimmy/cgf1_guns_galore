@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_Mk19Mod3_" ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_Mk19Mod3_</defName>
+		<label>Mk.19 Mod 3</label>
+		<description>40mm AGL. Requires steel to refurbish its barrel after heavy use.</description>
+		
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_MWP_SFX_GrenadeLauncher2</shotSound>
+		<!--<reloadSound>VVE_BulldogReloadSound</reloadSound>-->
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/Mk19_Mod3</gizmoIconTexPath>
+		
+		<projectile>CGF1_MWP_Bullet_40x53mm_Grenade</projectile>
+		<reloadTimer>3.6</reloadTimer>
+		<warmUpTimer>1.8</warmUpTimer>
+		
+		<chargePerAmmoCount>2</chargePerAmmoCount>
+		
+		<magazineCapacity>32</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2</rotationSpeed>
+		
+		<projectileOffset>2</projectileOffset>
+		
+		<minRange>3.9</minRange>
+		<maxRange>36.9</maxRange>
+		
+		<recoil>
+			<distanceTotal>0.10</distanceTotal>
+			<distancePerTick>0.04</distancePerTick>
+			<speedMultiplierPostRecoil>0.15</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>30</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<spreadRadius>2.9</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>20</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				<spreadRadius>1.9</spreadRadius>
+			</li>
+			
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/Mk19_Mod3</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.6, 1.6)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_Mk19Mod3_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_Mk19Mod3_Coaxial_</defName>
+
+		<autoSnapTargeting>true</autoSnapTargeting>
+		<projectileOffset>0.7</projectileOffset>
+
+		<graphicData>
+			<texPath>CGF1/null</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+</Defs>
