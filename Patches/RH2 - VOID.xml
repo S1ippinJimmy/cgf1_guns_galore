@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[RH2] Faction: V.O.I.D.</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Remove these from spawning in normal trader/reward inventories -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[
+					defName="RNMelee_DFDuskBlade_Sword" or
+					defName="RNMelee_DFAmputator_Blade" or
+					defName="RNMelee_DFDual_Blade" or
+					defName="RNMelee_DFGrinder_Chainsaw" or
+					defName="RNGun_Longshot_PP10AMR" or
+					defName="RNGun_WraithCannon_HMG" or
+					defName="RNGun_GAU19_HMG" or
+					defName="RNGun_DuskMAG_HMG" or
+					defName="RNGun_CorpseBlaster_Shotgun" or
+					defName="RNGun_DuskStriker_Shotgun" or
+					defName="RNGun_DuskEnforcer_Revolver" or
+					defName="RNGun_CorpseDestroyer_GPMG" or
+					defName="RNGun_DuskCarbine_DMR" or
+					defName="RNGun_DFGAUSSRifle_AMR" or
+					defName="RHApparel_VOIDReactive_PowerArmor" or
+					defName="RHApparel_VengeanceGuard_PowerArmor" or
+					defName="RHApparel_VOIDReactive_Helmet" or
+					defName="RHApparel_DuskReactive_Helmet" or
+					defName="RHApparel_DFCloak_Hood" or
+					defName="RHApparel_DFCloak_Poncho" or
+					defName="RHApparel_VOID_SpeedSkin" or
+					defName="RHApparel_VOID_BusinessSuit" or
+					defName="RH_Nerotonin8B" or
+					defName="DF_UltraBoost_Implant" or
+					defName="DF_Devils_Implant" or
+					defName="DF_Volatile_Implant" or
+					defName="DF_XDusk_Implant" or
+					defName="DF_Dawn_Implant" or
+					defName="DF_Ghastly_Implant" or
+					defName="DF_Celerity_Implant" or
+					defName="DF_Scrutiny_Implant" or
+					defName="DF_Versatility_Implant" or
+					defName="DF_Mastery_Implant" or
+					defName="DF_Calamity_Implant" or
+					defName="DF_Lethality_Implant" or
+					defName="DF_Mortality_Implant" or
+					defName="DF_Trinity_Implant" or
+					defName="DF_Prosperity_Implant" or
+					defName="DF_MOTL_Implant" or
+					defName="DF_Haste_Implant" or
+					defName="DF_CatEye_Implant" or
+					defName="DF_Ghost_Implant" or
+					defName="DF_Destruction_Implant" or
+					defName="DF_Amber_Implant" or
+					defName="DF_Genius_Implant" or
+					defName="DF_GoldenRabbit_Implant" or
+					defName="DF_Data_Implant" or
+					defName="DF_Havoc_Implant" or
+					defName="RH_AestheticShaper" or
+					defName="DF_Voidtech_Implant" or
+					defName="DF_XHyper_Implant" or
+					defName="DF_XPerception_Implant" or
+					defName="DF_XIronskin_Implant" or
+					defName="DF_XViolence_Implant" or
+					defName="RH2_VOIDArchotechEye" or
+					defName="RH2_VOIDArchotechArm" or
+					defName="RH2_VOIDArchotechLeg" or
+					defName="RH2_NerotoninV_Implant" or
+					defName="RH2_Nerotonin2b_Implant" or
+					defName="RH2_Nerotonin4b_Implant" or
+					defName="RH_VOIDBionicSpine" or
+					defName="RH_VOIDBionicHeart" or
+					defName="RH_VOIDBionicStomach" or
+					defName="RH_VOIDBionicEar" or
+					defName="RH_VOIDBionicLung" or
+					defName="RH_VOIDBionicKidney" or
+					defName="RH_VOIDBionicLiver" or
+					defName="RH_VOIDCircadianHalfCycler" or
+					defName="VOIDBrain_Implant" or
+					defName="RH_VOIDAestheticNose"
+					]</xpath>
+					<value>
+						<tradeTags Inherit="False">
+							<li>CGF1_GunsGalore_NoSpawn</li>
+						</tradeTags>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[
+					defName="RNMelee_DFDuskBlade_Sword" or
+					defName="RNMelee_DFAmputator_Blade" or
+					defName="RNMelee_DFDual_Blade" or
+					defName="RNMelee_DFGrinder_Chainsaw" or
+					defName="RNGun_Longshot_PP10AMR" or
+					defName="RNGun_WraithCannon_HMG" or
+					defName="RNGun_GAU19_HMG" or
+					defName="RNGun_DuskMAG_HMG" or
+					defName="RNGun_CorpseBlaster_Shotgun" or
+					defName="RNGun_DuskStriker_Shotgun" or
+					defName="RNGun_DuskEnforcer_Revolver" or
+					defName="RNGun_CorpseDestroyer_GPMG" or
+					defName="RNGun_DuskCarbine_DMR" or
+					defName="RNGun_DFGAUSSRifle_AMR" or
+					defName="RHApparel_VOIDReactive_PowerArmor" or
+					defName="RHApparel_VengeanceGuard_PowerArmor" or
+					defName="RHApparel_VOIDReactive_Helmet" or
+					defName="RHApparel_DuskReactive_Helmet" or
+					defName="RHApparel_DFCloak_Hood" or
+					defName="RHApparel_DFCloak_Poncho" or
+					defName="RHApparel_VOID_SpeedSkin" or
+					defName="RHApparel_VOID_BusinessSuit"
+					]</xpath>
+					<value>
+						<thingSetMakerTags Inherit="False"/>
+					</value>
+				</li>
+				
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
