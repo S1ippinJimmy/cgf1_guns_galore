@@ -10,7 +10,7 @@
 
 	<!-- ==================== AmmoSet ========================== -->
 
-	<CombatExtended.AmmoSetDef MayRequire="cgf1.gunsgalore.industrialage.i">
+	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_8x58mmRDanishKrag</defName>
 		<label>8x58mmR Danish Krag</label>
 		<ammoTypes>
@@ -26,7 +26,7 @@
 
 	<!-- ==================== Ammo ========================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="8x58mmRDanishKragBase" ParentName="SmallAmmoBase" Abstract="True" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="8x58mmRDanishKragBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Large rifle cartridge used in machine guns and battle rifles.</description>
 		<statBases>
 			<Mass>0.031</Mass>
@@ -41,7 +41,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase">
 		<defName>Ammo_8x58mmRDanishKrag_FMJ</defName>
 		<label>8x58mmR Danish Krag cartridge (FMJ)</label>
 		<graphicData>
@@ -55,7 +55,7 @@
 		<cookOffProjectile>Bullet_8x58mmRDanishKrag_FMJ</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase">
 		<defName>Ammo_8x58mmRDanishKrag_AP</defName>
 		<label>8x58mmR Danish Krag cartridge (AP)</label>
 		<graphicData>
@@ -69,7 +69,7 @@
 		<cookOffProjectile>Bullet_8x58mmRDanishKrag_AP</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase">
 		<defName>Ammo_8x58mmRDanishKrag_HP</defName>
 		<label>8x58mmR Danish Krag cartridge (HP)</label>
 		<graphicData>
@@ -83,7 +83,7 @@
 		<cookOffProjectile>Bullet_8x58mmRDanishKrag_HP</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase">
 		<defName>Ammo_8x58mmRDanishKrag_Incendiary</defName>
 		<label>8x58mmR Danish Krag cartridge (AP-I)</label>
 		<graphicData>
@@ -97,7 +97,7 @@
 		<cookOffProjectile>Bullet_8x58mmRDanishKrag_Incendiary</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase">
 		<defName>Ammo_8x58mmRDanishKrag_HE</defName>
 		<label>8x58mmR Danish Krag cartridge (AP-HE)</label>
 		<graphicData>
@@ -111,7 +111,7 @@
 		<cookOffProjectile>Bullet_8x58mmRDanishKrag_HE</cookOffProjectile>
 	</ThingDef>
 	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="8x58mmRDanishKragBase">
 		<defName>Ammo_8x58mmRDanishKrag_Sabot</defName>
 		<label>8x58mmR Danish Krag cartridge (Sabot)</label>
 		<graphicData>
@@ -128,7 +128,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Name="Base8x58mmRDanishKragBullet" ParentName="BaseBulletCE" Abstract="true" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Name="Base8x58mmRDanishKragBullet" ParentName="BaseBulletCE" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -140,7 +140,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base8x58mmRDanishKragBullet" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef ParentName="Base8x58mmRDanishKragBullet">
 		<defName>Bullet_8x58mmRDanishKrag_FMJ</defName>
 		<label>8x58mmR Danish Krag cartridge (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -150,7 +150,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base8x58mmRDanishKragBullet" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef ParentName="Base8x58mmRDanishKragBullet">
 		<defName>Bullet_8x58mmRDanishKrag_AP</defName>
 		<label>8x58mmR Danish Krag cartridge (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -160,7 +160,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base8x58mmRDanishKragBullet" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef ParentName="Base8x58mmRDanishKragBullet">
 		<defName>Bullet_8x58mmRDanishKrag_HP</defName>
 		<label>8x58mmR Danish Krag cartridge (HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -170,7 +170,7 @@
 		</projectile>
 	</ThingDef>
 
-	  <ThingDef ParentName="Base8x58mmRDanishKragBullet" MayRequire="cgf1.gunsgalore.industrialage.i">
+	  <ThingDef ParentName="Base8x58mmRDanishKragBullet">
 		<defName>Bullet_8x58mmRDanishKrag_Incendiary</defName>
 		<label>8x58mmR Danish Krag bullet (AP-I)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -186,7 +186,7 @@
 		</projectile>
 	  </ThingDef>
 	  
-	  <ThingDef ParentName="Base8x58mmRDanishKragBullet" MayRequire="cgf1.gunsgalore.industrialage.i">
+	  <ThingDef ParentName="Base8x58mmRDanishKragBullet">
 		<defName>Bullet_8x58mmRDanishKrag_HE</defName>
 		<label>8x58mmR Danish Krag bullet (AP-HE)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -202,7 +202,7 @@
 		</projectile>
 	  </ThingDef>
 
-	  <ThingDef ParentName="Base8x58mmRDanishKragBullet" MayRequire="cgf1.gunsgalore.industrialage.i">
+	  <ThingDef ParentName="Base8x58mmRDanishKragBullet">
 		<defName>Bullet_8x58mmRDanishKrag_Sabot</defName>
 		<label>8x58mmR Danish Krag bullet (Sabot)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -215,7 +215,7 @@
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_8x58mmRDanishKrag_FMJ</defName>
 		<label>make 8x58mmR Danish Krag Cartridge (FMJ) cartridge x500</label>
 		<description>Craft 500 8x58mmR Danish Krag Cartridge (FMJ) cartridges.</description>
@@ -241,7 +241,7 @@
     <workAmount>3200</workAmount>		
 	</RecipeDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_8x58mmRDanishKrag_AP</defName>
 		<label>make 8x58mmR Danish Krag Cartridge (AP) cartridge x500</label>
 		<description>Craft 500 8x58mmR Danish Krag Cartridge (AP) cartridges.</description>
@@ -267,7 +267,7 @@
 		<workAmount>3840</workAmount>			
 	</RecipeDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_8x58mmRDanishKrag_HP</defName>
 		<label>make 8x58mmR Danish Krag Cartridge (HP) cartridge x500</label>
 		<description>Craft 500 8x58mmR Danish Krag Cartridge (HP) cartridges.</description>
@@ -293,7 +293,7 @@
 		<workAmount>3200</workAmount>		
 	</RecipeDef>
 
-  <RecipeDef ParentName="AdvancedAmmoRecipeBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_8x58mmRDanishKrag_Incendiary</defName>
     <label>make 8x58mmR Danish Krag (AP-I) cartridge x500</label>
     <description>Craft 500 8x58mmR Danish Krag (AP-I) cartridges.</description>
@@ -328,7 +328,7 @@
     <workAmount>4800</workAmount>
   </RecipeDef>
   
-  <RecipeDef ParentName="AdvancedAmmoRecipeBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_8x58mmRDanishKrag_HE</defName>
     <label>make 8x58mmR Danish Krag (AP-HE) cartridge x500</label>
     <description>Craft 500 8x58mmR Danish Krag (AP-HE) cartridges.</description>
@@ -363,7 +363,7 @@
     <workAmount>6000</workAmount>
   </RecipeDef>
   
-  <RecipeDef ParentName="AdvancedAmmoRecipeBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_8x58mmRDanishKrag_Sabot</defName>
     <label>make 8x58mmR Danish Krag (Sabot) cartridge x500</label>
     <description>Craft 500 8x58mmR Danish Krag (Sabot) cartridges.</description>

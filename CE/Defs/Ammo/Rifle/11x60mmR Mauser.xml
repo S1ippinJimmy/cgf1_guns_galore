@@ -10,7 +10,7 @@
 
 	<!-- ==================== AmmoSet ========================== -->
 
-	<CombatExtended.AmmoSetDef MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_11x60mmRMauser</defName>
 		<label>11x60mmR Mausere</label>
 		<ammoTypes>
@@ -23,7 +23,7 @@
 
 	<!-- ==================== Ammo ========================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="11x60mmRMauserBase" ParentName="SmallAmmoBase" Abstract="True" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="11x60mmRMauserBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Obsolete rimfire cartridge used in bolt-action rifles.</description>
 		<statBases>
 			<Mass>0.037</Mass>
@@ -38,7 +38,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="11x60mmRMauserBase" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="11x60mmRMauserBase">
 		<defName>Ammo_11x60mmRMauser_FMJ</defName>
 		<label>11x60mmR Mausere cartridge (FMJ)</label>
 		<graphicData>
@@ -52,7 +52,7 @@
 		<cookOffProjectile>Bullet_11x60mmRMauser_FMJ</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="11x60mmRMauserBase" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="11x60mmRMauserBase">
 		<defName>Ammo_11x60mmRMauser_AP</defName>
 		<label>11x60mmR Mausere cartridge (AP)</label>
 		<graphicData>
@@ -66,7 +66,7 @@
 		<cookOffProjectile>Bullet_11x60mmRMauser_AP</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="11x60mmRMauserBase" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="11x60mmRMauserBase">
 		<defName>Ammo_11x60mmRMauser_HP</defName>
 		<label>11x60mmR Mausere cartridge (HP)</label>
 		<graphicData>
@@ -82,7 +82,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Name="Base11x60mmRMauserBullet" ParentName="BaseBulletCE" Abstract="true" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<ThingDef Name="Base11x60mmRMauserBullet" ParentName="BaseBulletCE" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -94,7 +94,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base11x60mmRMauserBullet" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<ThingDef ParentName="Base11x60mmRMauserBullet">
 		<defName>Bullet_11x60mmRMauser_FMJ</defName>
 		<label>11x60mmR Mausere bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -104,7 +104,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base11x60mmRMauserBullet" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<ThingDef ParentName="Base11x60mmRMauserBullet">
 		<defName>Bullet_11x60mmRMauser_AP</defName>
 		<label>11x60mmR Mausere bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -114,7 +114,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base11x60mmRMauserBullet" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<ThingDef ParentName="Base11x60mmRMauserBullet">
 		<defName>Bullet_11x60mmRMauser_HP</defName>
 		<label>11x60mmR Mausere bullet (HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -126,7 +126,7 @@
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_11x60mmRMauser_FMJ</defName>
 		<label>make 11x60mmR Mausere cartridge x500</label>
 		<description>Craft 500 11x60mmR Mausere cartridges.</description>
@@ -152,7 +152,7 @@
 		<workAmount>3800</workAmount>
 	</RecipeDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_11x60mmRMauser_AP</defName>
 		<label>make 11x60mmR Mausere (AP) cartridge x500</label>
 		<description>Craft 500 11x60mmR Mausere (AP) cartridges.</description>
@@ -178,7 +178,7 @@
 		<workAmount>4560</workAmount>
 	</RecipeDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase" MayRequireAnyOf="cgf1.gunsgalore.industrialage.i,cgf1.comradespack.rifles">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_11x60mmRMauser_HP</defName>
 		<label>make 11x60mmR Mausere (HP) cartridge x500</label>
 		<description>Craft 500 11x60mmR Mausere (HP) cartridges.</description>

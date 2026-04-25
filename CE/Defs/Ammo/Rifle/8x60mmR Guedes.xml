@@ -23,7 +23,7 @@
 
 	<!-- ==================== Ammo ========================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="8x60mmRGuedesBase" ParentName="SmallAmmoBase" Abstract="True" MayRequire="cgf1.comradespack.rifles">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="8x60mmRGuedesBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Obsolete rimfire cartridge used in old bolt-action rifles.</description>
 		<statBases>
 			<Mass>0.029</Mass>

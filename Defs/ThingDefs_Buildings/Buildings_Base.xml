@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="CGF1_MWP_Turret_HowitzerBase_" ParentName="BuildingBase" Abstract="True">
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>true</rotatable>
+		<tickerType>Normal</tickerType>
+		<hasTooltip>true</hasTooltip>
+		
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+	</ThingDef>
+</Defs>

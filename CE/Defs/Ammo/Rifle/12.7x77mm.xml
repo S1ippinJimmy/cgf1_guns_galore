@@ -10,7 +10,7 @@
 	
 	<!-- ==================== AmmoSet ========================== -->
 
-	<CombatExtended.AmmoSetDef MayRequireAnyOf="cgf1.gunsgalore.coldwar.uk,cgf1.gunsgalore.coldwar.usa">
+	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_127x77mm</defName>
 		<label>12.7x77mm</label>
 		<ammoTypes>
@@ -21,7 +21,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="127x77mmBase" ParentName="SmallAmmoBase" Abstract="True" MayRequireAnyOf="cgf1.gunsgalore.coldwar.uk,cgf1.gunsgalore.coldwar.usa">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="127x77mmBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Shortened .50 BMG cartridge used in spotting rifles.</description>
 		<statBases>
 		<Mass>0.09</Mass>
@@ -36,7 +36,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="127x77mmBase" MayRequireAnyOf="cgf1.gunsgalore.coldwar.uk,cgf1.gunsgalore.coldwar.usa">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="127x77mmBase">
 		<defName>Ammo_127x77mm_FMJ</defName>
 		<label>12.7x77mm cartridge (FMJ)</label>
 		<graphicData>
@@ -51,7 +51,7 @@
 	</ThingDef>
 	<!-- ================== Projectiles ================== -->
 	
-	<ThingDef Name="Base127x77mmBullet" ParentName="BaseBulletCE" Abstract="true" MayRequireAnyOf="cgf1.gunsgalore.coldwar.uk,cgf1.gunsgalore.coldwar.usa">
+	<ThingDef Name="Base127x77mmBullet" ParentName="BaseBulletCE" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -63,7 +63,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base127x77mmBullet" MayRequireAnyOf="cgf1.gunsgalore.coldwar.uk,cgf1.gunsgalore.coldwar.usa">
+	<ThingDef ParentName="Base127x77mmBullet">
 		<defName>Bullet_127x77mm_FMJ</defName>
 		<label>12.7x77mm bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -75,7 +75,7 @@
 	
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase" MayRequireAnyOf="cgf1.gunsgalore.coldwar.uk,cgf1.gunsgalore.coldwar.usa">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_127x77mm_FMJ</defName>
 		<label>make 12.7x77mm (FMJ) cartridge x500</label>
 		<description>Craft 500 12.7x77mm (FMJ) cartridges.</description>

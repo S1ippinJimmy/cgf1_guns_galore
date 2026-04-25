@@ -2,6 +2,29 @@
 <Defs>
 
 	<SoundDef>
+		<defName>CGF1_GG_SFXR_Flamethrower</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<name>Shot</name>
+				<grains>
+					<li Class="AudioGrain_Clip">
+					<clipPath>Weapons_CGF1/Remake/Flamethrower</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>30</volumeRange>   
+				<pitchRange>
+					<min>0.9</min>        
+					<max>1.0</max>
+				</pitchRange>      
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
 		<defName>CGF1_GG_SFXR_Pistol1</defName>
 		<context>MapOnly</context>
 		<eventNames />  

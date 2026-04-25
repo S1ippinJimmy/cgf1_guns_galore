@@ -10,7 +10,7 @@
 	
 	<!-- ==================== AmmoSet ========================== -->
 
-	<CombatExtended.AmmoSetDef MayRequire="cgf1.gunsgalore.industrialage.i">
+	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_11mmChassepot</defName>
 		<label>11mm Chassepot</label>
 		<ammoTypes>
@@ -21,7 +21,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="11mmChassepotBase" ParentName="SmallAmmoBase" Abstract="True" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="11mmChassepotBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Paper cartridge found in early rifles.</description>
 		<statBases>
 		<Mass>0.031</Mass>
@@ -36,7 +36,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="11mmChassepotBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="11mmChassepotBase">
 		<defName>Ammo_11mmChassepot_FMJ</defName>
 		<label>11mm Chassepot cartridge</label>
 		<graphicData>
@@ -51,7 +51,7 @@
 
 	<!-- ================== Projectiles ================== -->
 	
-	<ThingDef Name="Base11mmChassepotBullet" ParentName="BaseBulletCE" Abstract="true" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Name="Base11mmChassepotBullet" ParentName="BaseBulletCE" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -63,7 +63,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base11mmChassepotBullet" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef ParentName="Base11mmChassepotBullet">
 		<defName>Bullet_11mmChassepot_FMJ</defName>
 		<label>11mm Chassepot bullet</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -75,7 +75,7 @@
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_11mmChassepot_FMJ</defName>
 		<label>make 11mm Chassepot cartridge x500</label>
 		<description>Craft 500 11mm Chassepot cartridges.</description>

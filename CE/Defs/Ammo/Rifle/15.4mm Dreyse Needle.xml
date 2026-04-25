@@ -10,7 +10,7 @@
 	
 	<!-- ==================== AmmoSet ========================== -->
 
-	<CombatExtended.AmmoSetDef MayRequire="cgf1.gunsgalore.industrialage.i">
+	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_154mmDreyseNeedle</defName>
 		<label>15.4mm Dreyse Needle</label>
 		<ammoTypes>
@@ -21,7 +21,7 @@
 	
 	<!-- ==================== Ammo ========================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="154mmDreyseNeedleBase" ParentName="SmallAmmoBase" Abstract="True" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="154mmDreyseNeedleBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Rimfire rifle cartridge found mostly in outdated rifles.</description>
 		<statBases>
 		<Mass>0.037</Mass>
@@ -36,7 +36,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="154mmDreyseNeedleBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="154mmDreyseNeedleBase">
 		<defName>Ammo_154mmDreyseNeedle_FMJ</defName>
 		<label>15.4mm Dreyse Needle cartridge</label>
 		<graphicData>
@@ -51,7 +51,7 @@
 
 	<!-- ================== Projectiles ================== -->
 	
-	<ThingDef Name="Base154mmDreyseNeedleBullet" ParentName="BaseBulletCE" Abstract="true" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef Name="Base154mmDreyseNeedleBullet" ParentName="BaseBulletCE" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -63,7 +63,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="Base154mmDreyseNeedleBullet" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<ThingDef ParentName="Base154mmDreyseNeedleBullet">
 		<defName>Bullet_154mmDreyseNeedle_FMJ</defName>
 		<label>15.4mm Dreyse Needle bullet</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -75,7 +75,7 @@
 
 	<!-- ==================== Recipes ========================== -->
 
-	<RecipeDef ParentName="AmmoRecipeBase" MayRequire="cgf1.gunsgalore.industrialage.i">
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_154mmDreyseNeedle_FMJ</defName>
 		<label>make 15.4mm Dreyse Needle cartridge x500</label>
 		<description>Craft 500 15.4mm Dreyse Needle cartridges.</description>
