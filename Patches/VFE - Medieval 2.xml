@@ -46,7 +46,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="VFEM2_Skirmisher"]/weaponMoney</xpath>
 					<value>
-						<li>108~190</li>
+						<weaponMoney>108~190</weaponMoney>
 					</value>
 				</li>
 				
@@ -124,7 +124,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="VFEM2_Archer"]/weaponMoney</xpath>
 					<value>
-						<li>90~150</li>
+						<weaponMoney>90~150</weaponMoney>
 					</value>
 				</li>
 				
