@@ -32,14 +32,14 @@
 			<texPath>CGF1/Projectile/265mm_Flare</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>0.7</drawSize>
+			<drawSize>0.5</drawSize>
 		</graphicData>
 		<thingClass>Projectile_SpawnsThing</thingClass>
 		<projectile>
 			<ai_IsIncendiary>true</ai_IsIncendiary>
 			<spinRate>3</spinRate>
 			<speed>50</speed>
-			<explosionRadius>7.9</explosionRadius>
+			<explosionRadius>3.9</explosionRadius>
 			<arcHeightFactor>0.7</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 			<screenShakeFactor>0.5</screenShakeFactor>
@@ -56,7 +56,7 @@
 		  <texPath>CGF1/Projectile/265mm_Flare</texPath>
 		  <shaderType>Transparent</shaderType>
 		  <onGroundRandomRotateAngle>360</onGroundRandomRotateAngle>
-		  <drawSize>0.7</drawSize>
+		  <drawSize>0.5</drawSize>
 		</graphicData>
 		<selectable>false</selectable>
 		<tickerType>Normal</tickerType>
@@ -65,7 +65,7 @@
 		<rotatable>false</rotatable>
 		<comps>
 		  <li MayRequire="Ludeon.RimWorld.Anomaly" Class="CompProperties_DisruptorFlare">
-			<radius>7.9</radius>
+			<radius>3.9</radius>
 			<effecterDef>DisruptorFlareAttached</effecterDef>
 			<destroyWarningEffecterDef>DisruptorDestroyWarning</destroyWarningEffecterDef>
 		  </li>
@@ -74,7 +74,7 @@
 			<displayCountdownOnLabel>true</displayCountdownOnLabel>
 		  </li>
 		  <li Class="CompProperties_Glower">
-			<glowRadius>5</glowRadius>
+			<glowRadius>3</glowRadius>
 			<glowColor>(255,117,108,0)</glowColor>
 		  </li>
 		</comps>
