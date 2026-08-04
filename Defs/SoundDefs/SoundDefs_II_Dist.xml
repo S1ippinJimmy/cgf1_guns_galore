@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_Dist_HMG</defName>
+		<context>MapOnly</context>
+		<maxVoices>3</maxVoices>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>  
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Dist/Dist_HMG</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>21.23529~20.05882</volumeRange>      
+				<pitchRange>0.9082352~1.091765</pitchRange>  
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_Dist_Javelin</defName>
+		<context>MapOnly</context>
+		<maxVoices>2</maxVoices>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>  
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Dist/Dist_Javelin</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>25.23529~24.05882</volumeRange>      
+				<pitchRange>0.9082352~1.091765</pitchRange>  
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_MWP_SFX_Dist_RPG</defName>
+		<context>MapOnly</context>
+		<maxVoices>2</maxVoices>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>  
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Weapons_CGF1/Dist/Dist_RPG</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>25.23529~24.05882</volumeRange>      
+				<pitchRange>0.9082352~1.091765</pitchRange>  
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+</Defs>

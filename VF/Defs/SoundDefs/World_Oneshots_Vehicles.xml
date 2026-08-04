@@ -82,6 +82,22 @@
 	</SoundDef>
 	
 	<SoundDef>
+		<defName>CGF1_GG_SFXR_OneShot_Start_Heli</defName>  
+		<context>MapOnly</context>  
+		<maxSimultaneous>1</maxSimultaneous>  
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/start_heli</clipPath>
+					</li>
+				</grains>      
+				<volumeRange>40~40</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
 		<defName>CGF1_GG_SFXR_OneShot_Start_Tank</defName>  
 		<context>MapOnly</context>  
 		<maxSimultaneous>1</maxSimultaneous>  

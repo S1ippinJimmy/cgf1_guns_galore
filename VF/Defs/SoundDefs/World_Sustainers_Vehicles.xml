@@ -132,6 +132,230 @@
 		</subSounds>
 	</SoundDef>
 	
+	<!-- Plane -->
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_AttackJet</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_attackjet</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>30~30</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_C130H</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_c130</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>27~27</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_DualProp</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_dualprop</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>27~27</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_FighterJet</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_fighterjet</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>30~30</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_LightJet</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_lightjet</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>30~30</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- Helicopter -->
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_AH6M</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_ah6</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>25~25</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_CH53E</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_ch53</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>25~25</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_Chinook</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_chinook</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>25~25</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_Mi8Hip</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_mi8</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>25~25</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>CGF1_GG_SFXR_Sustainer_Idle_ReconHeli</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>  
+		<priorityMode>PrioritizeNearest</priorityMode>  
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>      
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Vehicles_CGF1/idle_reconheli</clipPath>
+					</li>
+				</grains>      
+				<pitchRange>0.99~1.01</pitchRange>
+				<volumeRange>25~25</volumeRange>
+				<sustainAttack>2.5</sustainAttack>      
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	<SoundDef>
 		<defName>CGF1_GG_SFXR_Sustainer_Idle_UH1_Iroquois</defName>
 		<sustain>true</sustain>
