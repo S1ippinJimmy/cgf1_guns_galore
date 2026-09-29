@@ -244,6 +244,13 @@
 		<thingCategories Inherit="False">
 			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
 		</thingCategories>
+		<recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+        </recipeMaker>
 	</ThingDef>
 	
 	<ThingDef Name="CGF1_MWP_BaseGrenade" ParentName="BaseWeapon" Abstract="True">
@@ -257,6 +264,13 @@
 		<thingCategories Inherit="False">
 			<li>CGF1_MWP_ThingCategory_GunsGalore</li>
 		</thingCategories>
+		<recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+        </recipeMaker>
 	  </ThingDef>
 	
 	

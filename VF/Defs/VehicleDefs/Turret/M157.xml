@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_M157_" ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_M157_</defName>
+		<label>M157</label>
+		<description>70mm FFAR pod, 7x capacity. Requires steel to refurbish its barrel after heavy use.</description>
+		
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_MWP_SFX_Launcher_AA</shotSound>
+		<!--<reloadSound>VVE_BulldogReloadSound</reloadSound>-->
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/M157</gizmoIconTexPath>
+		
+		<projectile>CGF1_MWP_Bullet_70mm_FFAR_</projectile>
+		<reloadTimer>7</reloadTimer>
+		<warmUpTimer>0.8</warmUpTimer>
+		
+		<magazineCapacity>7</magazineCapacity>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2</rotationSpeed>
+		
+		<projectileOffset>1</projectileOffset>
+		
+		<minRange>6.9</minRange>
+		<maxRange>44.9</maxRange>
+		
+		<recoil>
+			<distanceTotal>0.10</distanceTotal>
+			<distancePerTick>0.04</distancePerTick>
+			<speedMultiplierPostRecoil>0.15</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>4</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<spreadRadius>4</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenBursts>1</ticksBetweenBursts>
+				<spreadRadius>3</spreadRadius>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/GE_M134</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+	
+	<!-- Coaxial -->
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M157_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_M157_Coaxial_</defName>
+		
+		<autoSnapTargeting>true</autoSnapTargeting>
+		<projectileOffset>0</projectileOffset>
+
+		<graphicData>
+			<!--<texPath>CGF1/Vehicle/Turret/GE_M134</texPath>-->
+			<texPath>CGF1/null</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+</Defs>

@@ -42,6 +42,7 @@ Combat Extended support - Adds dozens of new calibers and cartridges from all ov
 		<li>SmashPhil.VehicleFramework</li>
 		<li>OskarPotocki.VanillaVehiclesExpanded</li>
 		<li>OskarPotocki.VanillaVehiclesExpandedUpgrades</li>
+		<li>jelly.ProperShotguns</li>
 	</loadAfter>
 	<loadBefore>
 		<li>cgf1.gunsgalore.industrialage.i</li>

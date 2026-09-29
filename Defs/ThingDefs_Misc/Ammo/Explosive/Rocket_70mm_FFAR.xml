@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>CGF1_MWP_Bullet_70mm_FFAR_</defName>
+		<label>70mm FFAR</label>
+		<graphicData>
+			<texPath>CGF1/Projectile/FIM92A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<explosionRadius>2.1</explosionRadius>
+			<speed>55</speed>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_MoteEmitter">
+				<mote>CGF1_Mote_RocketSmoke</mote>
+				<emissionInterval>0</emissionInterval>
+				<saveKeysPrefix>rocketSmoke</saveKeysPrefix>
+			</li>
+			<li Class="CompProperties_MoteEmitter">
+				<mote>CGF1_Mote_RocketFlame</mote>
+				<emissionInterval>0</emissionInterval>
+				<saveKeysPrefix>rocketFlame</saveKeysPrefix>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

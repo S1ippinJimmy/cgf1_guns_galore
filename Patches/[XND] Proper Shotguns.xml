@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[XND] Proper Shotguns (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- [XND] Proper Shotguns (Continued) -->
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[
+					defName="CGF1_MWP_Bullet_410Bore_Slug_Shotgun" or
+					defName="CGF1_MWP_Bullet_28Gauge_Slug_Shotgun"]</xpath>
+					<value>
+						<li Class="ProperShotguns.ShotgunExtension">
+							<pelletCount>3</pelletCount>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName="CGF1_MWP_Bullet_16Gauge_Slug_Shotgun"]</xpath>
+					<value>
+						<li Class="ProperShotguns.ShotgunExtension">
+							<pelletCount>4</pelletCount>
+						</li>
+					</value>
+				</li>	
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[
+					defName="CGF1_MWP_Bullet_12Gauge_Slug_Shotgun" or
+					defName="CGF1_MWP_Bullet_10Gauge_Slug_Shotgun"
+					]</xpath>
+					<value>
+						<li Class="ProperShotguns.ShotgunExtension">
+							<pelletCount>5</pelletCount>
+						</li>
+					</value>
+				</li>	
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="CGF1_MWP_Bullet_410Bore_Slug_Shotgun"]/projectile</xpath>
+					<value>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>16</damageAmountBase>
+							<speed>62</speed>
+							<stoppingPower>1</stoppingPower>
+						</projectile>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="CGF1_MWP_Bullet_28Gauge_Slug_Shotgun"]/projectile</xpath>
+					<value>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>17</damageAmountBase>
+							<speed>63</speed>
+							<stoppingPower>1.5</stoppingPower>
+						</projectile>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="CGF1_MWP_Bullet_16Gauge_Slug_Shotgun"]/projectile</xpath>
+					<value>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>21</damageAmountBase>
+							<speed>63</speed>
+							<stoppingPower>2</stoppingPower>
+						</projectile>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="CGF1_MWP_Bullet_12Gauge_Slug_Shotgun"]/projectile</xpath>
+					<value>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>25</damageAmountBase>
+							<speed>63</speed>
+							<stoppingPower>3</stoppingPower>
+						</projectile>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="CGF1_MWP_Bullet_10Gauge_Slug_Shotgun"]/projectile</xpath>
+					<value>
+						<projectile>
+							<damageDef>Bullet</damageDef>
+							<damageAmountBase>28</damageAmountBase>
+							<speed>63</speed>
+							<stoppingPower>3.5</stoppingPower>
+						</projectile>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[
+					defName="CGF1_MWP_Bullet_410Bore_Slug_Shotgun" or
+					defName="CGF1_MWP_Bullet_28Gauge_Slug_Shotgun" or
+					defName="CGF1_MWP_Bullet_16Gauge_Slug_Shotgun" or
+					defName="CGF1_MWP_Bullet_12Gauge_Slug_Shotgun"
+					]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Projectile/Bullet_Small</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[
+					defName="CGF1_MWP_Bullet_10Gauge_Slug_Shotgun"
+					]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Projectile/Bullet_Big</texPath>
+					</value>
+				</li>
+				<!--<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Gun_PumpShotgun" or defName="Gun_ChainShotgun"]/verbs//li[verbClass="Verb_Shoot" and defaultProjectile="Bullet_Shotgun"]/verbClass</xpath>
+					<value>
+						<verbClass>ProperShotguns.Verb_ShootShotgun</verbClass>
+					</value>
+				</li>-->
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

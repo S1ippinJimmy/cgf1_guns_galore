@@ -14,6 +14,13 @@
 			<speed>85</speed>
 			<stoppingPower>2</stoppingPower>
 		</projectile>
+		<!--<comps>
+			<li Class="CompProperties_MoteEmitter">
+				<mote>CGF1_Mote_Tracer</mote>
+				<emissionInterval>0</emissionInterval>
+				<saveKeysPrefix>tracer</saveKeysPrefix>
+			</li>
+		</comps>-->
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBullet">

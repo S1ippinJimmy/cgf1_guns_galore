@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <MuzzleFlash.MuzzleFlashDef>
+        <defName>CGF1_MF_StandardMuzzleFlashSD</defName>
+        <texture>CGF1/MuzzleFlash/MuzzleFlashSD</texture>
+        <defaultSize>(0.8,0.8)</defaultSize>
+        <splits>(5,4)</splits>
+        <drawOffsetMultiplier>(0.37,0)</drawOffsetMultiplier>
+        <duration>5</duration>
+        <framesPerAnimation>5</framesPerAnimation>
+        <lightIntensity>0.8</lightIntensity>
+    </MuzzleFlash.MuzzleFlashDef>
+</Defs>

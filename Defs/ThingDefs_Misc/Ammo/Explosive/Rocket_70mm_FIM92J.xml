@@ -16,6 +16,18 @@
 			<explosionRadius>1.9</explosionRadius>
 			<speed>60</speed>
 		</projectile>
+		<comps>
+			<li Class="CompProperties_MoteEmitter">
+				<mote>CGF1_Mote_RocketSmoke</mote>
+				<emissionInterval>0</emissionInterval>
+				<saveKeysPrefix>rocketSmoke</saveKeysPrefix>
+			</li>
+			<li Class="CompProperties_MoteEmitter">
+				<mote>CGF1_Mote_RocketFlame</mote>
+				<emissionInterval>0</emissionInterval>
+				<saveKeysPrefix>rocketFlame</saveKeysPrefix>
+			</li>
+		</comps>
 		<!--<comps>
 			<li Class="HeavyWeapons.CompProperties_GuidedProjectile">
 				<hitChance>1</hitChance>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	<Vehicles.VehicleTurretDef Name="CGF1_MWP_Vehicle_TurretGun_M134_" ParentName="VehicleTurretBase">
+		<defName>CGF1_MWP_Vehicle_TurretGun_M134_</defName>
+		<label>M134</label>
+		<description>7.62mm Minigun. Requires steel to refurbish its barrel after heavy use.</description>
+		
+		<turretType>Rotatable</turretType>
+		<shotSound>CGF1_MWP_SFX_MG_Minigun2</shotSound>
+		<!--<reloadSound>VVE_BulldogReloadSound</reloadSound>-->
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/GE_M134</gizmoIconTexPath>
+		
+		<projectile>CGF1_MWP_Bullet_762x51mmNATO_Auto</projectile>
+		<reloadTimer>3</reloadTimer>
+		<warmUpTimer>1.8</warmUpTimer>
+		
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		
+		<magazineCapacity>1000</magazineCapacity>
+		<genericAmmo>true</genericAmmo>
+		
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2</rotationSpeed>
+		
+		<projectileOffset>1</projectileOffset>
+		
+		<maxRange>36.9</maxRange>
+		
+		<recoil>
+			<distanceTotal>0.10</distanceTotal>
+			<distancePerTick>0.04</distancePerTick>
+			<speedMultiplierPostRecoil>0.15</speedMultiplierPostRecoil>
+		</recoil>
+		
+		<fireModes>
+			<li>
+				<shotsPerBurst>50</shotsPerBurst>
+				<ticksBetweenShots>2</ticksBetweenShots>
+				<ticksBetweenBursts>72</ticksBetweenBursts>
+				<spreadRadius>3.9</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>2</ticksBetweenShots>
+				<ticksBetweenBursts>30</ticksBetweenBursts>
+				<spreadRadius>1.9</spreadRadius>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
+
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/GE_M134</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+		
+		<ammunition>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</ammunition>
+	</Vehicles.VehicleTurretDef>
+	
+	<!-- Coaxial -->
+	
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M134_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_M134_Coaxial_</defName>
+		<label>M134</label>
+		
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/GE_M134</gizmoIconTexPath>
+		
+		<autoSnapTargeting>true</autoSnapTargeting>
+		<projectileOffset>0.3</projectileOffset>
+
+		<graphicData>
+			<!--<texPath>CGF1/Vehicle/Turret/GE_M134</texPath>-->
+			<texPath>CGF1/null</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1, 1)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+</Defs>
