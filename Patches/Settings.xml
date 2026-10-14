@@ -842,6 +842,140 @@
 	<Operation Class="VEF.PatchOperationToggableSequence">
 		<enabled>False</enabled>
 		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<label>[Odyssey] Replace unique weapons colors</label>
+		<operations>
+		
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_Red"]/color</xpath>
+				<value>
+					<color>(205, 60, 60)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_MutedRed"]/color</xpath>
+				<value>
+					<color>(178, 119, 128)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_Purple"]/color</xpath>
+				<value>
+					<color>(173, 107, 173)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_MutedPurple"]/color</xpath>
+				<value>
+					<color>(153, 128, 153)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_Green"]/color</xpath>
+				<value>
+					<color>(120, 150, 111)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_MutedGreen"]/color</xpath>
+				<value>
+					<color>(142, 147, 32)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_MutedGreen"]/color</xpath>
+				<value>
+					<color>(142, 147, 32)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_IceBlue"]/color</xpath>
+				<value>
+					<color>(161, 170, 198)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_MutedBlue"]/color</xpath>
+				<value>
+					<color>(117, 142, 175)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_DarkBrown"]/color</xpath>
+				<value>
+					<color>(168, 128, 72)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_White"]/color</xpath>
+				<value>
+					<color>(200, 200, 200)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_Limestone"]/color</xpath>
+				<value>
+					<color>(178, 169, 141)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_Sandstone"]/color</xpath>
+				<value>
+					<color>(183, 151, 137)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_Gray"]/color</xpath>
+				<value>
+					<color>(165, 165, 165)</color>
+				</value>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ColorDef[defName="UniqueWeapon_Black"]/color</xpath>
+				<value>
+					<color>(55, 55, 55)</color>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+
+		<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<label>[Odyssey] Use preset unique weapons</label>
+		<operations>
+		
+			<li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[
+				defName="Gun_Revolver_Unique" or
+				defName="Gun_BoltActionRifle_Unique" or
+				defName="Gun_ChainShotgun_Unique" or
+				defName="Gun_HeavySMG_Unique" or
+				defName="Gun_LMG_Unique" or
+				defName="Gun_AssaultRifle_Unique" or
+				defName="Gun_SniperRifle_Unique" or
+				defName="Gun_Minigun_Unique" or
+				defName="Bow_Great_Unique" or
+				defName="Gun_ChargeRifle_Unique" or
+				defName="Gun_ChargeLance_Unique" or
+				defName="Gun_HellcatRifle_Unique" or
+				defName="Gun_BeamRepeater_Unique"
+				]/thingSetMakerTags</xpath>
+				<value>
+					<thingSetMakerTags Inherit="False"/>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+	<Operation Class="VEF.PatchOperationToggableSequence">
+		<enabled>False</enabled>
+		<mods>
 			<li>Vanilla Expanded Framework</li>
 		</mods>
 		<label>[Vanilla Expanded] Use preset gun spawns</label>

@@ -8,7 +8,7 @@
 			<texPath>CGF1/Projectile/40x46mm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>0.80</drawSize>
+			<drawSize>0.60</drawSize>
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
@@ -29,7 +29,7 @@
 			<texPath>CGF1/Projectile/40x46mm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>0.80</drawSize>
+			<drawSize>0.60</drawSize>
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
@@ -49,7 +49,7 @@
 			<texPath>CGF1/Projectile/40x46mm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>0.80</drawSize>
+			<drawSize>0.60</drawSize>
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
@@ -73,7 +73,7 @@
 			<texPath>CGF1/Projectile/40x46mm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>0.80</drawSize>
+			<drawSize>0.60</drawSize>
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
@@ -95,7 +95,7 @@
 			<texPath>CGF1/Projectile/40x46mm</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>0.80</drawSize>
+			<drawSize>0.60</drawSize>
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>

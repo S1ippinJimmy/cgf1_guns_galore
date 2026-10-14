@@ -314,7 +314,7 @@
 						<defName>AM_AdvancedWeapons</defName>
 						<root Class="ThingSetMaker_RandomOption">
 							<options>
-								<li MayRequire="cgf1.gunsgalore.greatwar.centralpower">
+								<li MayRequire="cgf1.gunsgalore.greatwar.centralpowers">
 									<weight>0.25</weight>
 									<thingSetMaker Class="ThingSetMaker_Count">
 										<fixedParams>
