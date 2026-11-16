@@ -71,6 +71,14 @@
 			The C-More M26 Modular Accessory Shotgun System is a specialized shotgun designed to attach to an M16 or M4 rifle. Primarily designed for breaching doors, the M26 MASS was designed to replace standalone shotguns previously used in the same role (however, the M26 MASS can also be used as a standalone weapon.) It competed against the KAC Masterkey and ultimately won, becoming the standard door breaching accessory of the US military.</description>
 		</li>
 		<li>
+			<label>Remington MCS</label>
+			<canBeToggled>true</canBeToggled>
+			<separateToggle>false</separateToggle>
+			<description>Caliber: 12 Gauge. 3-round tube. Pump-action.
+
+			The Remington 870 MCS (Modular Combat System) Accessory Weapon is an ultra-compact, under-barrel shotgun configuration. Stripped of its stock and pistol grip, it mounts directly to the under-barrel rail of a host rifle. While functionally similar to the older KAC Masterkey, the MCS variant utilizes a modern quick-detach clamp that mounts seamlessly to standard Picatinny systems rather than proprietary barrel lugs. It provides infantrymen with rapid, integrated door-breaching capabilities without forcing them to swap weapons.</description>
+		</li>
+		<li>
 			<label>Pulsefire</label>
 			<canBeToggled>true</canBeToggled>
 			<separateToggle>false</separateToggle>

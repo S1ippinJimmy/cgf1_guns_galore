@@ -76,7 +76,21 @@
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
 	
-	<!-- Coaxial -->
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M134_">
+		<defName>CGF1_MWP_Vehicle_TurretGun_M134D_</defName>
+		<label>M134D</label>
+		
+		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/GE_M134D</gizmoIconTexPath>
+		
+		<graphicData>
+			<texPath>CGF1/Vehicle/Turret/GE_M134D</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(1.3, 1.3)</drawSize>
+		</graphicData>
+	</Vehicles.VehicleTurretDef>
+	
+	<!-- Coaxial (Aircraft) -->
 	
 	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M134_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_M134_Coaxial_</defName>
@@ -86,7 +100,7 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.3</projectileOffset>
-
+		
 		<graphicData>
 			<!--<texPath>CGF1/Vehicle/Turret/GE_M134</texPath>-->
 			<texPath>CGF1/null</texPath>

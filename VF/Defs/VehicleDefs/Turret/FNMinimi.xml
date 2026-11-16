@@ -100,10 +100,10 @@
 			<drawSize>(1.3, 1.3)</drawSize>
 		</graphicData>
 	</Vehicles.VehicleTurretDef>
-	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMinimi_">
+	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMinimi_" MayRequire="cgf1.gunsgalore.coldwar.commonwealth">
 		<defName>CGF1_MWP_Vehicle_TurretGun_C9_Small_</defName>
 		<label>C9</label>
-		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/M249_SAW</gizmoIconTexPath>
+		<gizmoIconTexPath>CGF1/Gun/C9</gizmoIconTexPath>
 		
 		<projectileOffset>3</projectileOffset>
 

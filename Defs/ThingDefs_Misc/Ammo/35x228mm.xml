@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet"> <!-- 35mm Marksman -->
+		<defName>CGF1_MWP_Bullet_35x228mm_Auto</defName>
+		<label>35x228mm</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>CGF1/Projectile/Bullet_VeryBig</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>72</damageAmountBase>
+			<speed>118</speed> <!--  1175 m/s -->
+			<explosionRadius>1.1</explosionRadius>
+			<soundExplode>Explosion_Rocket</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<stoppingPower>9</stoppingPower>
+		</projectile>
+	</ThingDef>
+</Defs>

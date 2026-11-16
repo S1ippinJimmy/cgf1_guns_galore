@@ -65,7 +65,7 @@
 		</ammunition>
 	</Vehicles.VehicleTurretDef>
 	
-	<!-- Coaxial -->
+	<!-- Coaxial (Aircraft) -->
 	
 	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_M157_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_M157_Coaxial_</defName>

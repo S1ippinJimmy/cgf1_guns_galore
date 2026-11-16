@@ -134,6 +134,7 @@
 	
 	<!-- Coaxial -->
 	
+	
 	<Vehicles.VehicleTurretDef ParentName="CGF1_MWP_Vehicle_TurretGun_FNMAG58_">
 		<defName>CGF1_MWP_Vehicle_TurretGun_FNMAG6040_Coaxial_</defName>
 		<label>FN MAG 60.40</label>
@@ -142,6 +143,36 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.7</projectileOffset>
+		
+		<warmUpTimer>0.1</warmUpTimer>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>7</ticksBetweenShots>
+				<ticksBetweenBursts>144</ticksBetweenBursts>
+				<spreadRadius>1.9</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>40</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
 
 		<graphicData>
 			<!--<texPath>CGF1/Vehicle/Turret/L7A1_Small</texPath>-->
@@ -160,6 +191,36 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.7</projectileOffset>
+		
+		<warmUpTimer>0.1</warmUpTimer>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>7</ticksBetweenShots>
+				<ticksBetweenBursts>144</ticksBetweenBursts>
+				<spreadRadius>1.9</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>40</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
 
 		<graphicData>
 			<!--<texPath>CGF1/Vehicle/Turret/L7A1_Small</texPath>-->
@@ -178,6 +239,36 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.7</projectileOffset>
+		
+		<warmUpTimer>0.1</warmUpTimer>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>7</ticksBetweenShots>
+				<ticksBetweenBursts>144</ticksBetweenBursts>
+				<spreadRadius>1.9</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>40</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
 
 		<graphicData>
 			<!--<texPath>CGF1/Vehicle/Turret/L7A1_Small</texPath>-->
@@ -196,6 +287,36 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.7</projectileOffset>
+		
+		<warmUpTimer>0.1</warmUpTimer>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>7</ticksBetweenShots>
+				<ticksBetweenBursts>144</ticksBetweenBursts>
+				<spreadRadius>1.9</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>40</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
 
 		<graphicData>
 			<!--<texPath>CGF1/Vehicle/Turret/L7A1_Small</texPath>-->
@@ -213,6 +334,8 @@
 		<gizmoIconTexPath>CGF1/Vehicle/Turret/Coax/L43A1_RangingGun</gizmoIconTexPath>
 		
 		<maxRange>55</maxRange>
+		
+		<warmUpTimer>0.1</warmUpTimer>
 		
 		<fireModes Inherit="False">
 			<li>

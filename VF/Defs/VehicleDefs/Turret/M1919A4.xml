@@ -184,6 +184,36 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.7</projectileOffset>
+		
+		<warmUpTimer>0.1</warmUpTimer>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>14</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>144</ticksBetweenBursts>
+				<spreadRadius>1.8</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>40</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
 
 		<graphicData>
 			<texPath>CGF1/null</texPath>
@@ -202,6 +232,36 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.7</projectileOffset>
+		
+		<warmUpTimer>0.1</warmUpTimer>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>14</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>144</ticksBetweenBursts>
+				<spreadRadius>1.8</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>40</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
 
 		<graphicData>
 			<texPath>CGF1/null</texPath>
@@ -220,6 +280,36 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.7</projectileOffset>
+		
+		<warmUpTimer>0.1</warmUpTimer>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>14</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>144</ticksBetweenBursts>
+				<spreadRadius>1.8</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>40</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
 
 		<graphicData>
 			<texPath>CGF1/null</texPath>
@@ -235,6 +325,36 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.7</projectileOffset>
+		
+		<warmUpTimer>0.1</warmUpTimer>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>14</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>144</ticksBetweenBursts>
+				<spreadRadius>1.8</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>40</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
 
 		<graphicData>
 			<texPath>CGF1/null</texPath>
@@ -250,6 +370,36 @@
 		
 		<autoSnapTargeting>true</autoSnapTargeting>
 		<projectileOffset>0.7</projectileOffset>
+		
+		<warmUpTimer>0.1</warmUpTimer>
+		
+		<fireModes Inherit="False">
+			<li>
+				<shotsPerBurst>14</shotsPerBurst>
+				<ticksBetweenShots>9</ticksBetweenShots>
+				<ticksBetweenBursts>144</ticksBetweenBursts>
+				<spreadRadius>1.8</spreadRadius>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>40</ticksBetweenBursts>
+				<label>Single Shot</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+				
+				<accuracyTouch>0.28</accuracyTouch>
+				<accuracyShort>0.72</accuracyShort>
+				<accuracyMedium>0.66</accuracyMedium>
+				<accuracyLong>0.50</accuracyLong>
+			</li>
+		</fireModes>
 
 		<graphicData>
 			<texPath>CGF1/null</texPath>
